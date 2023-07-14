@@ -32,7 +32,7 @@ namespace Operadores
         private void BtLimpiar_Click(object sender, EventArgs e)
         {
             Txoper1.Text = null;
-            Txoper2.Text = null;    
+            Txoper2.Text = null;
         }
     }
 }
