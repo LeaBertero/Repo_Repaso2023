@@ -33,6 +33,7 @@ namespace Operadores
         {
             Txoper1.Text = null;
             Txoper2.Text = null;
+            LblResultado.Text = null;
         }
     }
 }
