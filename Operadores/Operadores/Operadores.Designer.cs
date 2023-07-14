@@ -41,9 +41,10 @@
             // BtCalcular
             // 
             BtCalcular.Cursor = Cursors.Hand;
-            BtCalcular.Location = new Point(805, 210);
+            BtCalcular.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            BtCalcular.Location = new Point(815, 235);
             BtCalcular.Name = "BtCalcular";
-            BtCalcular.Size = new Size(158, 82);
+            BtCalcular.Size = new Size(165, 49);
             BtCalcular.TabIndex = 0;
             BtCalcular.Text = "Calcular";
             BtCalcular.UseVisualStyleBackColor = true;
@@ -51,24 +52,27 @@
             // 
             // Txoper1
             // 
+            Txoper1.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             Txoper1.Location = new Point(301, 238);
             Txoper1.Name = "Txoper1";
-            Txoper1.Size = new Size(125, 27);
+            Txoper1.Size = new Size(125, 43);
             Txoper1.TabIndex = 1;
             // 
             // Txoper2
             // 
+            Txoper2.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             Txoper2.Location = new Point(605, 238);
             Txoper2.Name = "Txoper2";
-            Txoper2.Size = new Size(125, 27);
+            Txoper2.Size = new Size(125, 43);
             Txoper2.TabIndex = 2;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(506, 241);
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(495, 232);
             label1.Name = "label1";
-            label1.Size = new Size(19, 20);
+            label1.Size = new Size(39, 41);
             label1.TabIndex = 3;
             label1.Text = "+";
             label1.TextAlign = ContentAlignment.MiddleCenter;
