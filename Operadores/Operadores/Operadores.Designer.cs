@@ -36,6 +36,7 @@
             LblResultado = new Label();
             BtSalir = new Button();
             label2 = new Label();
+            BtLimpiar = new Button();
             SuspendLayout();
             // 
             // BtCalcular
@@ -44,7 +45,7 @@
             BtCalcular.Cursor = Cursors.Hand;
             BtCalcular.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             BtCalcular.ForeColor = Color.White;
-            BtCalcular.Location = new Point(823, 231);
+            BtCalcular.Location = new Point(819, 203);
             BtCalcular.Name = "BtCalcular";
             BtCalcular.Size = new Size(160, 56);
             BtCalcular.TabIndex = 0;
@@ -118,12 +119,27 @@
             label2.Text = "Formulario de operadores";
             label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // BtLimpiar
+            // 
+            BtLimpiar.BackColor = Color.SteelBlue;
+            BtLimpiar.Cursor = Cursors.Hand;
+            BtLimpiar.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            BtLimpiar.ForeColor = Color.White;
+            BtLimpiar.Location = new Point(819, 265);
+            BtLimpiar.Name = "BtLimpiar";
+            BtLimpiar.Size = new Size(160, 56);
+            BtLimpiar.TabIndex = 7;
+            BtLimpiar.Text = "Limpiar";
+            BtLimpiar.UseVisualStyleBackColor = false;
+            BtLimpiar.Click += BtLimpiar_Click;
+            // 
             // FrmInicio
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkTurquoise;
             ClientSize = new Size(1186, 542);
+            Controls.Add(BtLimpiar);
             Controls.Add(label2);
             Controls.Add(BtSalir);
             Controls.Add(LblResultado);
@@ -150,5 +166,6 @@
         private Label LblResultado;
         private Button BtSalir;
         private Label label2;
+        private Button BtLimpiar;
     }
 }
