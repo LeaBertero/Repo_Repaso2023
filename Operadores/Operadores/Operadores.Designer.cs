@@ -40,14 +40,16 @@
             // 
             // BtCalcular
             // 
+            BtCalcular.BackColor = Color.SteelBlue;
             BtCalcular.Cursor = Cursors.Hand;
             BtCalcular.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            BtCalcular.Location = new Point(815, 235);
+            BtCalcular.ForeColor = Color.White;
+            BtCalcular.Location = new Point(823, 231);
             BtCalcular.Name = "BtCalcular";
-            BtCalcular.Size = new Size(165, 49);
+            BtCalcular.Size = new Size(160, 56);
             BtCalcular.TabIndex = 0;
             BtCalcular.Text = "Calcular";
-            BtCalcular.UseVisualStyleBackColor = true;
+            BtCalcular.UseVisualStyleBackColor = false;
             BtCalcular.Click += BtCalcular_Click;
             // 
             // Txoper1
