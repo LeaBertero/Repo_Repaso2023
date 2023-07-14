@@ -34,6 +34,7 @@
             label1 = new Label();
             LblResultado = new Label();
             BtSalir = new Button();
+            label2 = new Label();
             SuspendLayout();
             // 
             // BtCalcular
@@ -96,19 +97,33 @@
             BtSalir.UseVisualStyleBackColor = false;
             BtSalir.Click += BtSalir_Click;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 30F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(312, 33);
+            label2.Name = "label2";
+            label2.Size = new Size(641, 67);
+            label2.TabIndex = 6;
+            label2.Text = "Formulario de operadores";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // FrmInicio
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkTurquoise;
             ClientSize = new Size(1186, 542);
+            Controls.Add(label2);
             Controls.Add(BtSalir);
             Controls.Add(LblResultado);
             Controls.Add(label1);
             Controls.Add(Txoper2);
             Controls.Add(Txoper1);
             Controls.Add(BtCalcular);
+            MaximizeBox = false;
             Name = "FrmInicio";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Operadores";
             ResumeLayout(false);
             PerformLayout();
@@ -122,5 +137,6 @@
         private Label label1;
         private Label LblResultado;
         private Button BtSalir;
+        private Label label2;
     }
 }
