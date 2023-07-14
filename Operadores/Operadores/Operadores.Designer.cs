@@ -80,9 +80,10 @@
             // LblResultado
             // 
             LblResultado.AutoSize = true;
+            LblResultado.Font = new Font("Segoe UI Variable Text", 23F, FontStyle.Bold, GraphicsUnit.Point);
             LblResultado.Location = new Point(482, 350);
             LblResultado.Name = "LblResultado";
-            LblResultado.Size = new Size(75, 20);
+            LblResultado.Size = new Size(203, 52);
             LblResultado.TabIndex = 4;
             LblResultado.Text = "Resultado";
             LblResultado.TextAlign = ContentAlignment.MiddleCenter;
