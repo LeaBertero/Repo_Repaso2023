@@ -22,6 +22,8 @@ namespace Operadores
 
             //LblResultado.Text = Txoper1.Text + Txoper2.Text;
             LblResultado.Text = Convert.ToString(res);
+
+            
         }
 
         private void FrmInicio_Load(object sender, EventArgs e)
