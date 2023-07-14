@@ -46,6 +46,7 @@
             BtCalcular.TabIndex = 0;
             BtCalcular.Text = "Calcular";
             BtCalcular.UseVisualStyleBackColor = true;
+            BtCalcular.Click += BtCalcular_Click;
             // 
             // Txoper1
             // 
@@ -125,6 +126,7 @@
             Name = "FrmInicio";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Operadores";
+            Load += FrmInicio_Load;
             ResumeLayout(false);
             PerformLayout();
         }
