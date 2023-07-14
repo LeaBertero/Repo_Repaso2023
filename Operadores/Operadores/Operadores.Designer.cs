@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInicio));
             BtCalcular = new Button();
             Txoper1 = new TextBox();
             Txoper2 = new TextBox();
@@ -122,6 +123,7 @@
             Controls.Add(Txoper2);
             Controls.Add(Txoper1);
             Controls.Add(BtCalcular);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "FrmInicio";
             StartPosition = FormStartPosition.CenterScreen;
