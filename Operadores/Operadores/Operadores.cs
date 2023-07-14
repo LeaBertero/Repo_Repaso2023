@@ -26,7 +26,7 @@ namespace Operadores
 
         private void FrmInicio_Load(object sender, EventArgs e)
         {
-            BackColor = Color.Red;
+            BackColor = Color.Gray;
         }
     }
 }
