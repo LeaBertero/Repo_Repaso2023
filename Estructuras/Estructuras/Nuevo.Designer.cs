@@ -48,6 +48,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.DeepSkyBlue;
             ClientSize = new Size(800, 450);
             Controls.Add(BtSalir2);
             Name = "FrmNuevo";
