@@ -21,5 +21,16 @@ namespace Estructuras
         {
             BackColor = Color.BlueViolet;
         }
+
+        private void BtSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void BtNuevo_Click(object sender, EventArgs e)
+        {
+            var Nuewformulario = new FrmNuevo();
+            Nuewformulario.ShowDialog();
+        }
     }
 }
