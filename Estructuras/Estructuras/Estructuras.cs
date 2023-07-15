@@ -58,6 +58,7 @@ namespace Estructuras
         private void Btlimpiar_Click(object sender, EventArgs e)
         {
             TxIngreso.Text = null;
+            LblResultado.Text= null;
         }
     }
 }
