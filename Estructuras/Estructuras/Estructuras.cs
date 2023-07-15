@@ -45,6 +45,14 @@ namespace Estructuras
             {
                 LblResultado.Text = "Adolescente";
             }
+            else if(edad >= 18 && edad > 60)
+            {
+                LblResultado.Text = "Adulto";
+            }
+            else
+            {
+                LblResultado.Text = "Adulto mayor";
+            }
         }
 
         private void Btlimpiar_Click(object sender, EventArgs e)
