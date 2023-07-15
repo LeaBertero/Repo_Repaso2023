@@ -1,14 +1,14 @@
 ﻿namespace Estructuras
 {
-    partial class Estructuras
+    partial class FrmInicio
     {
         /// <summary>
-        ///  Required designer variable.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        ///  Clean up any resources being used.
+        /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -23,27 +23,26 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Estructuras));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInicio));
             SuspendLayout();
             // 
-            // Estructuras
+            // FrmInicio
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Red;
             ClientSize = new Size(800, 450);
-            ForeColor = SystemColors.ActiveCaption;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
-            Name = "Estructuras";
+            Name = "FrmInicio";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Estructuras";
-            Load += Estructuras_Load;
+            Text = "estructuras";
+            Load += FrmInicio_Load;
             ResumeLayout(false);
         }
 
