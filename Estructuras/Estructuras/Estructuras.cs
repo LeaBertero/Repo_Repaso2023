@@ -32,5 +32,24 @@ namespace Estructuras
             var Nuewformulario = new FrmNuevo();
             Nuewformulario.ShowDialog();
         }
+
+        private void BtAceptar_Click(object sender, EventArgs e)
+        {
+            int edad = Convert.ToInt32(TxIngreso.Text);
+
+            if (edad < 12)
+            {
+                LblResultado.Text = "Es un niño ";
+            }
+            else if (edad >= 12 && edad < 18)
+            {
+                LblResultado.Text = "Adolescente";
+            }
+        }
+
+        private void Btlimpiar_Click(object sender, EventArgs e)
+        {
+            TxIngreso.Text = null;
+        }
     }
 }

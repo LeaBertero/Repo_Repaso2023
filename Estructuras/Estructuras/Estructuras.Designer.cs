@@ -36,6 +36,7 @@
             label1 = new Label();
             LblResultado = new Label();
             label2 = new Label();
+            Btlimpiar = new Button();
             SuspendLayout();
             // 
             // BtSalir
@@ -75,6 +76,7 @@
             BtAceptar.TabIndex = 2;
             BtAceptar.Text = "Aceptar";
             BtAceptar.UseVisualStyleBackColor = false;
+            BtAceptar.Click += BtAceptar_Click;
             // 
             // TxIngreso
             // 
@@ -99,7 +101,7 @@
             LblResultado.AutoSize = true;
             LblResultado.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
             LblResultado.ForeColor = SystemColors.ControlLightLight;
-            LblResultado.Location = new Point(660, 264);
+            LblResultado.Location = new Point(640, 276);
             LblResultado.Name = "LblResultado";
             LblResultado.Size = new Size(134, 37);
             LblResultado.TabIndex = 5;
@@ -117,12 +119,26 @@
             label2.TabIndex = 6;
             label2.Text = "Programa de edades";
             // 
+            // Btlimpiar
+            // 
+            Btlimpiar.BackColor = Color.Orange;
+            Btlimpiar.Cursor = Cursors.Hand;
+            Btlimpiar.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            Btlimpiar.Location = new Point(640, 220);
+            Btlimpiar.Name = "Btlimpiar";
+            Btlimpiar.Size = new Size(115, 41);
+            Btlimpiar.TabIndex = 7;
+            Btlimpiar.Text = "Limpiar";
+            Btlimpiar.UseVisualStyleBackColor = false;
+            Btlimpiar.Click += Btlimpiar_Click;
+            // 
             // FrmInicio
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Red;
             ClientSize = new Size(1055, 567);
+            Controls.Add(Btlimpiar);
             Controls.Add(label2);
             Controls.Add(LblResultado);
             Controls.Add(label1);
@@ -149,5 +165,6 @@
         private Label label1;
         private Label LblResultado;
         private Label label2;
+        private Button Btlimpiar;
     }
 }
