@@ -14,7 +14,7 @@ namespace Edad
 
         private void BtRes_Click(object sender, EventArgs e)
         {
-            int nota = Convert.ToInt32(TxtNota.Text);
+            int nota = Convert.ToInt32(TxtNota.Text.Trim());
 
             switch (nota)
             {
