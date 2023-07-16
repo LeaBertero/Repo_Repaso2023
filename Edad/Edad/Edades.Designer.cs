@@ -33,10 +33,12 @@
             LblRes = new Label();
             TxtNota = new TextBox();
             BtLimpiar = new Button();
+            BtCerrar = new Button();
             SuspendLayout();
             // 
             // BtRes
             // 
+            BtRes.Cursor = Cursors.Hand;
             BtRes.Location = new Point(223, 173);
             BtRes.Name = "BtRes";
             BtRes.Size = new Size(144, 47);
@@ -59,9 +61,9 @@
             LblRes.AutoSize = true;
             LblRes.Location = new Point(223, 285);
             LblRes.Name = "LblRes";
-            LblRes.Size = new Size(43, 20);
+            LblRes.Size = new Size(42, 20);
             LblRes.TabIndex = 2;
-            LblRes.Text = "Edad";
+            LblRes.Text = "Nota";
             // 
             // TxtNota
             // 
@@ -72,6 +74,7 @@
             // 
             // BtLimpiar
             // 
+            BtLimpiar.Cursor = Cursors.Hand;
             BtLimpiar.Location = new Point(414, 216);
             BtLimpiar.Name = "BtLimpiar";
             BtLimpiar.Size = new Size(155, 47);
@@ -80,17 +83,30 @@
             BtLimpiar.UseVisualStyleBackColor = true;
             BtLimpiar.Click += BtLimpiar_Click;
             // 
+            // BtCerrar
+            // 
+            BtCerrar.Cursor = Cursors.Hand;
+            BtCerrar.Location = new Point(633, 400);
+            BtCerrar.Name = "BtCerrar";
+            BtCerrar.Size = new Size(155, 47);
+            BtCerrar.TabIndex = 5;
+            BtCerrar.Text = "Salir";
+            BtCerrar.UseVisualStyleBackColor = true;
+            BtCerrar.Click += BtCerrar_Click;
+            // 
             // Edades
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Gold;
             ClientSize = new Size(800, 450);
+            Controls.Add(BtCerrar);
             Controls.Add(BtLimpiar);
             Controls.Add(TxtNota);
             Controls.Add(LblRes);
             Controls.Add(label1);
             Controls.Add(BtRes);
+            MaximizeBox = false;
             Name = "Edades";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Programa de edades";
@@ -106,5 +122,6 @@
         private Label LblRes;
         private TextBox TxtNota;
         private Button BtLimpiar;
+        private Button BtCerrar;
     }
 }
