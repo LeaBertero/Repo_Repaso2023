@@ -22,10 +22,10 @@ namespace Edad
                     LblRes.Text = "Aplazado";
                     break;
                 case 2:
-                    LblRes.Text = "Aprobado";
+                    LblRes.Text = "Aplazado";
                     break;
                 case 3:
-                    LblRes.Text = "Aplazado";
+                    LblRes.Text = "Aprobado";
                     break;
                 case 4:
                     LblRes.Text = "promocionado";
