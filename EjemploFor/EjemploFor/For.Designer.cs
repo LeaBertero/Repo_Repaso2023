@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInicio));
             Btaceptar = new Button();
-            Txnum2 = new TextBox();
-            Txnum1 = new TextBox();
+            TxtHasta = new TextBox();
+            TxtDesde = new TextBox();
             label1 = new Label();
             label2 = new Label();
-            TxRes = new Label();
+            LblRes = new Label();
             BtSalir = new Button();
             BtBorrar = new Button();
             label3 = new Label();
-            Txnum3 = new TextBox();
+            TxtPaso = new TextBox();
             label4 = new Label();
             SuspendLayout();
             // 
@@ -54,26 +54,27 @@
             Btaceptar.TabIndex = 0;
             Btaceptar.Text = "Aceptar";
             Btaceptar.UseVisualStyleBackColor = false;
+            Btaceptar.Click += Btaceptar_Click;
             // 
-            // Txnum2
+            // TxtHasta
             // 
-            Txnum2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            Txnum2.ForeColor = Color.Red;
-            Txnum2.Location = new Point(478, 199);
-            Txnum2.Name = "Txnum2";
-            Txnum2.Size = new Size(125, 34);
-            Txnum2.TabIndex = 1;
-            Txnum2.TextAlign = HorizontalAlignment.Center;
+            TxtHasta.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            TxtHasta.ForeColor = Color.Red;
+            TxtHasta.Location = new Point(478, 199);
+            TxtHasta.Name = "TxtHasta";
+            TxtHasta.Size = new Size(125, 34);
+            TxtHasta.TabIndex = 1;
+            TxtHasta.TextAlign = HorizontalAlignment.Center;
             // 
-            // Txnum1
+            // TxtDesde
             // 
-            Txnum1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            Txnum1.ForeColor = Color.Red;
-            Txnum1.Location = new Point(305, 199);
-            Txnum1.Name = "Txnum1";
-            Txnum1.Size = new Size(125, 34);
-            Txnum1.TabIndex = 2;
-            Txnum1.TextAlign = HorizontalAlignment.Center;
+            TxtDesde.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            TxtDesde.ForeColor = Color.Red;
+            TxtDesde.Location = new Point(305, 199);
+            TxtDesde.Name = "TxtDesde";
+            TxtDesde.Size = new Size(125, 34);
+            TxtDesde.TabIndex = 2;
+            TxtDesde.TextAlign = HorizontalAlignment.Center;
             // 
             // label1
             // 
@@ -82,9 +83,9 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(305, 131);
             label1.Name = "label1";
-            label1.Size = new Size(107, 28);
+            label1.Size = new Size(70, 28);
             label1.TabIndex = 3;
-            label1.Text = "Numero 1";
+            label1.Text = "Desde";
             // 
             // label2
             // 
@@ -93,20 +94,20 @@
             label2.ForeColor = Color.White;
             label2.Location = new Point(478, 131);
             label2.Name = "label2";
-            label2.Size = new Size(107, 28);
+            label2.Size = new Size(66, 28);
             label2.TabIndex = 4;
-            label2.Text = "Numero 2";
+            label2.Text = "Hasta";
             // 
-            // TxRes
+            // LblRes
             // 
-            TxRes.AutoSize = true;
-            TxRes.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            TxRes.ForeColor = Color.White;
-            TxRes.Location = new Point(305, 299);
-            TxRes.Name = "TxRes";
-            TxRes.Size = new Size(106, 28);
-            TxRes.TabIndex = 5;
-            TxRes.Text = "Resultado";
+            LblRes.AutoSize = true;
+            LblRes.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            LblRes.ForeColor = Color.White;
+            LblRes.Location = new Point(305, 299);
+            LblRes.Name = "LblRes";
+            LblRes.Size = new Size(106, 28);
+            LblRes.TabIndex = 5;
+            LblRes.Text = "Resultado";
             // 
             // BtSalir
             // 
@@ -148,15 +149,15 @@
             label3.Text = "Nuevo programa - EJEMPLO ESTRUCTURA DE FOR";
             label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // Txnum3
+            // TxtPaso
             // 
-            Txnum3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            Txnum3.ForeColor = Color.Red;
-            Txnum3.Location = new Point(650, 199);
-            Txnum3.Name = "Txnum3";
-            Txnum3.Size = new Size(125, 34);
-            Txnum3.TabIndex = 9;
-            Txnum3.TextAlign = HorizontalAlignment.Center;
+            TxtPaso.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            TxtPaso.ForeColor = Color.Red;
+            TxtPaso.Location = new Point(650, 199);
+            TxtPaso.Name = "TxtPaso";
+            TxtPaso.Size = new Size(125, 34);
+            TxtPaso.TabIndex = 9;
+            TxtPaso.TextAlign = HorizontalAlignment.Center;
             // 
             // label4
             // 
@@ -165,26 +166,27 @@
             label4.ForeColor = Color.White;
             label4.Location = new Point(650, 131);
             label4.Name = "label4";
-            label4.Size = new Size(107, 28);
+            label4.Size = new Size(56, 28);
             label4.TabIndex = 10;
-            label4.Text = "Numero 3";
+            label4.Text = "Paso";
             // 
             // FrmInicio
             // 
+            AcceptButton = Btaceptar;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Orange;
             ClientSize = new Size(1115, 529);
             Controls.Add(label4);
-            Controls.Add(Txnum3);
+            Controls.Add(TxtPaso);
             Controls.Add(label3);
             Controls.Add(BtBorrar);
             Controls.Add(BtSalir);
-            Controls.Add(TxRes);
+            Controls.Add(LblRes);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(Txnum1);
-            Controls.Add(Txnum2);
+            Controls.Add(TxtDesde);
+            Controls.Add(TxtHasta);
             Controls.Add(Btaceptar);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
@@ -198,15 +200,15 @@
         #endregion
 
         private Button Btaceptar;
-        private TextBox Txnum2;
-        private TextBox Txnum1;
+        private TextBox TxtHasta;
+        private TextBox TxtDesde;
         private Label label1;
         private Label label2;
-        private Label TxRes;
+        private Label LblRes;
         private Button BtSalir;
         private Button BtBorrar;
         private Label label3;
-        private TextBox Txnum3;
+        private TextBox TxtPaso;
         private Label label4;
     }
 }

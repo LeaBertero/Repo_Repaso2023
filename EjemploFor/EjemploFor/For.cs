@@ -24,10 +24,20 @@ namespace EjemploFor
 
         private void BtBorrar_Click(object sender, EventArgs e)
         {
-            Txnum1.Text = null;
-            Txnum2.Text = null;
-            TxRes.Text = null;
+            TxtDesde.Text = null;
+            TxtHasta.Text = null;
+            LblRes.Text = null;
 
+        }
+
+        private void Btaceptar_Click(object sender, EventArgs e)
+        {
+            for (int i = Convert.ToInt32(TxtDesde.Text); i < 10; i++)
+            {
+
+            }
+
+           
         }
     }
 }
