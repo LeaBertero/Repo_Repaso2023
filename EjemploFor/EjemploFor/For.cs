@@ -38,7 +38,7 @@ namespace EjemploFor
             try
             {
                 for (int contador = Convert.ToInt32(TxtDesde.Text);
-               contador < Convert.ToInt32(TxtHasta.Text);
+               contador <= Convert.ToInt32(TxtHasta.Text);
                contador = contador + Convert.ToInt32(TxtPaso.Text))
 
                 {
