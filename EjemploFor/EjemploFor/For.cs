@@ -13,7 +13,7 @@ namespace EjemploFor
     public partial class FrmInicio : Form
     {
 
-       
+
         public FrmInicio()
         {
             InitializeComponent();
@@ -48,7 +48,7 @@ namespace EjemploFor
 
                 }
 
-               
+
             }
             catch (Exception)
             {
@@ -59,6 +59,10 @@ namespace EjemploFor
 
         }
 
-       
+        //private void BtNuevo_Click(object sender, EventArgs e)
+        //{
+        //    var newForm = new Form();
+        //    newForm.ShowDialog();
+        //}
     }
 }

@@ -40,6 +40,7 @@
             label3 = new Label();
             TxtPaso = new TextBox();
             label4 = new Label();
+            BtNuevo = new Button();
             SuspendLayout();
             // 
             // Btaceptar
@@ -75,7 +76,6 @@
             TxtDesde.Size = new Size(125, 34);
             TxtDesde.TabIndex = 2;
             TxtDesde.TextAlign = HorizontalAlignment.Center;
-           
             // 
             // label1
             // 
@@ -171,6 +171,20 @@
             label4.TabIndex = 10;
             label4.Text = "Paso";
             // 
+            // BtNuevo
+            // 
+            BtNuevo.BackColor = Color.Red;
+            BtNuevo.Cursor = Cursors.Hand;
+            BtNuevo.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            BtNuevo.ForeColor = SystemColors.ControlLightLight;
+            BtNuevo.Location = new Point(23, 467);
+            BtNuevo.Name = "BtNuevo";
+            BtNuevo.Size = new Size(202, 50);
+            BtNuevo.TabIndex = 11;
+            BtNuevo.Text = "Ejemplo For V2";
+            BtNuevo.UseVisualStyleBackColor = false;
+            
+            // 
             // FrmInicio
             // 
             AcceptButton = Btaceptar;
@@ -178,6 +192,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Orange;
             ClientSize = new Size(1115, 529);
+            Controls.Add(BtNuevo);
             Controls.Add(label4);
             Controls.Add(TxtPaso);
             Controls.Add(label3);
@@ -211,5 +226,6 @@
         private Label label3;
         private TextBox TxtPaso;
         private Label label4;
+        private Button BtNuevo;
     }
 }
