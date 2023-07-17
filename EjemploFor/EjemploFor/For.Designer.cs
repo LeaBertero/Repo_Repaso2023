@@ -40,6 +40,7 @@
             label3 = new Label();
             TxtPaso = new TextBox();
             label4 = new Label();
+            BTNuevo = new Button();
             SuspendLayout();
             // 
             // Btaceptar
@@ -48,7 +49,7 @@
             Btaceptar.Cursor = Cursors.Hand;
             Btaceptar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             Btaceptar.ForeColor = SystemColors.ControlLightLight;
-            Btaceptar.Location = new Point(820, 191);
+            Btaceptar.Location = new Point(740, 198);
             Btaceptar.Name = "Btaceptar";
             Btaceptar.Size = new Size(154, 50);
             Btaceptar.TabIndex = 0;
@@ -60,7 +61,7 @@
             // 
             TxtHasta.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             TxtHasta.ForeColor = Color.Red;
-            TxtHasta.Location = new Point(478, 199);
+            TxtHasta.Location = new Point(398, 206);
             TxtHasta.Name = "TxtHasta";
             TxtHasta.Size = new Size(125, 34);
             TxtHasta.TabIndex = 1;
@@ -70,7 +71,7 @@
             // 
             TxtDesde.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             TxtDesde.ForeColor = Color.Red;
-            TxtDesde.Location = new Point(305, 199);
+            TxtDesde.Location = new Point(225, 206);
             TxtDesde.Name = "TxtDesde";
             TxtDesde.Size = new Size(125, 34);
             TxtDesde.TabIndex = 2;
@@ -81,7 +82,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(305, 131);
+            label1.Location = new Point(225, 138);
             label1.Name = "label1";
             label1.Size = new Size(70, 28);
             label1.TabIndex = 3;
@@ -92,7 +93,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(478, 131);
+            label2.Location = new Point(398, 138);
             label2.Name = "label2";
             label2.Size = new Size(66, 28);
             label2.TabIndex = 4;
@@ -103,7 +104,7 @@
             LblRes.AutoSize = true;
             LblRes.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             LblRes.ForeColor = Color.White;
-            LblRes.Location = new Point(305, 299);
+            LblRes.Location = new Point(225, 306);
             LblRes.Name = "LblRes";
             LblRes.Size = new Size(106, 28);
             LblRes.TabIndex = 5;
@@ -115,7 +116,7 @@
             BtSalir.Cursor = Cursors.Hand;
             BtSalir.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             BtSalir.ForeColor = SystemColors.ControlLightLight;
-            BtSalir.Location = new Point(305, 384);
+            BtSalir.Location = new Point(225, 391);
             BtSalir.Name = "BtSalir";
             BtSalir.Size = new Size(669, 50);
             BtSalir.TabIndex = 6;
@@ -129,7 +130,7 @@
             BtBorrar.Cursor = Cursors.Hand;
             BtBorrar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             BtBorrar.ForeColor = SystemColors.ControlLightLight;
-            BtBorrar.Location = new Point(820, 247);
+            BtBorrar.Location = new Point(740, 254);
             BtBorrar.Name = "BtBorrar";
             BtBorrar.Size = new Size(154, 50);
             BtBorrar.TabIndex = 7;
@@ -142,18 +143,18 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 25F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(44, 25);
+            label3.Location = new Point(326, 40);
             label3.Name = "label3";
-            label3.Size = new Size(1022, 57);
+            label3.Size = new Size(449, 57);
             label3.TabIndex = 8;
-            label3.Text = "Nuevo programa - EJEMPLO ESTRUCTURA DE FOR";
+            label3.Text = "ESTRUCTURA DE FOR";
             label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // TxtPaso
             // 
             TxtPaso.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             TxtPaso.ForeColor = Color.Red;
-            TxtPaso.Location = new Point(650, 199);
+            TxtPaso.Location = new Point(570, 206);
             TxtPaso.Name = "TxtPaso";
             TxtPaso.Size = new Size(125, 34);
             TxtPaso.TabIndex = 9;
@@ -164,11 +165,25 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(650, 131);
+            label4.Location = new Point(570, 138);
             label4.Name = "label4";
             label4.Size = new Size(56, 28);
             label4.TabIndex = 10;
             label4.Text = "Paso";
+            // 
+            // BTNuevo
+            // 
+            BTNuevo.BackColor = Color.Red;
+            BTNuevo.Cursor = Cursors.Hand;
+            BTNuevo.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            BTNuevo.ForeColor = SystemColors.ControlLightLight;
+            BTNuevo.Location = new Point(454, 467);
+            BTNuevo.Name = "BTNuevo";
+            BTNuevo.Size = new Size(208, 50);
+            BTNuevo.TabIndex = 11;
+            BTNuevo.Text = "Estructura For V2";
+            BTNuevo.UseVisualStyleBackColor = false;
+            BTNuevo.Click += BTNuevo_Click;
             // 
             // FrmInicio
             // 
@@ -177,6 +192,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Orange;
             ClientSize = new Size(1115, 529);
+            Controls.Add(BTNuevo);
             Controls.Add(label4);
             Controls.Add(TxtPaso);
             Controls.Add(label3);
@@ -210,5 +226,6 @@
         private Label label3;
         private TextBox TxtPaso;
         private Label label4;
+        private Button BTNuevo;
     }
 }

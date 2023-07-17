@@ -59,6 +59,12 @@ namespace EjemploFor
 
         }
 
+        private void BTNuevo_Click(object sender, EventArgs e)
+        {
+            var siguiente = new siguiente();
+            siguiente.Show();
+        }
+
 
 
         //private void BtNuevo_Click(object sender, EventArgs e)
