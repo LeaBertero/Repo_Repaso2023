@@ -59,6 +59,8 @@ namespace EjemploFor
 
         }
 
+
+
         //private void BtNuevo_Click(object sender, EventArgs e)
         //{
         //    var newForm = new Form();
