@@ -12,6 +12,8 @@ namespace EjemploFor
 {
     public partial class FrmInicio : Form
     {
+
+       
         public FrmInicio()
         {
             InitializeComponent();
@@ -24,20 +26,39 @@ namespace EjemploFor
 
         private void BtBorrar_Click(object sender, EventArgs e)
         {
-            TxtDesde.Text = null;
-            TxtHasta.Text = null;
+            TxtDesde.Text = null; //Desde
+            TxtHasta.Text = null; //Hasta
+            TxtPaso.Text = null; //Paso
             LblRes.Text = null;
 
         }
 
         private void Btaceptar_Click(object sender, EventArgs e)
         {
-            for (int i = Convert.ToInt32(TxtDesde.Text); i < 10; i++)
+            try
             {
+                for (int contador = Convert.ToInt32(TxtDesde.Text);
+               contador < Convert.ToInt32(TxtHasta.Text);
+               contador = contador + Convert.ToInt32(TxtPaso.Text))
+
+                {
+
+                    LblRes.Text = contador.ToString();
+                    this.Refresh();
+
+                }
+
+               
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Debe ingresar los valores para contar");
 
             }
 
-           
+
         }
+
+       
     }
 }

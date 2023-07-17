@@ -75,6 +75,7 @@
             TxtDesde.Size = new Size(125, 34);
             TxtDesde.TabIndex = 2;
             TxtDesde.TextAlign = HorizontalAlignment.Center;
+           
             // 
             // label1
             // 
