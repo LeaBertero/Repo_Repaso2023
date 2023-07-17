@@ -17,6 +17,17 @@ namespace EjemploFor
             InitializeComponent();
         }
 
+        private void BtSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
 
+        private void BtBorrar_Click(object sender, EventArgs e)
+        {
+            Txnum1.Text = null;
+            Txnum2.Text = null;
+            TxRes.Text = null;
+
+        }
     }
 }
