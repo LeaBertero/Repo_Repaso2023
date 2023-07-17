@@ -12,19 +12,22 @@ namespace Edad
             BackColor = Color.HotPink;
         }
 
+        
+
         private void BtRes_Click(object sender, EventArgs e)
         {
             int nota = Convert.ToInt32(TxtNota.Text.Trim());
 
             switch (nota)
             {
+
                 case 1:
                     LblRes.Text = "Aplazado";
                     break;
                 case 2:
                     LblRes.Text = "Aplazado";
-                    break;
-                case 3:
+                    break;                   
+                case 3:                      
                     LblRes.Text = "Aprobado";
                     break;
                 case 4:
@@ -37,8 +40,12 @@ namespace Edad
                     LblRes.Text = "Nota no valida";
                     break;
 
+                 
+                    
             }
         }
+
+        
 
         private void BtLimpiar_Click(object sender, EventArgs e)
         {
