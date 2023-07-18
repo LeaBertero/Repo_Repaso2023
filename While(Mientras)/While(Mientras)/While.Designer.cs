@@ -99,7 +99,8 @@
             BtCerrar.Size = new Size(168, 59);
             BtCerrar.TabIndex = 4;
             BtCerrar.Text = "cerrar";
-            BtCerrar.UseVisualStyleBackColor = false;            
+            BtCerrar.UseVisualStyleBackColor = false;
+            BtCerrar.Click += BtCerrar_Click;
             // 
             // TxSalir
             // 

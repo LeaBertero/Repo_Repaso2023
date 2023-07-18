@@ -42,5 +42,16 @@ namespace While_Mientras_
             }
         }
 
+        private void BtCerrar_Click(object sender, EventArgs e)
+        {
+            if (TxSalir.Text == "salir")
+            {
+                Close ();
+            }
+            else
+            {
+                label1.Text = "Debe ingresar un valor";
+            }
+        }
     }
 }

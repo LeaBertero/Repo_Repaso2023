@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             BtSalir = new Button();
+            Btcerrar = new Button();
+            TxIngreso = new TextBox();
+            LblMensaje = new Label();
             SuspendLayout();
             // 
             // BtSalir
@@ -45,6 +48,37 @@
             BtSalir.UseVisualStyleBackColor = false;
             BtSalir.Click += BtSalir_Click;
             // 
+            // Btcerrar
+            // 
+            Btcerrar.BackColor = Color.ForestGreen;
+            Btcerrar.Cursor = Cursors.Hand;
+            Btcerrar.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            Btcerrar.ForeColor = SystemColors.Control;
+            Btcerrar.Location = new Point(24, 12);
+            Btcerrar.Name = "Btcerrar";
+            Btcerrar.Size = new Size(306, 59);
+            Btcerrar.TabIndex = 2;
+            Btcerrar.Text = "Cerrar manualmente";
+            Btcerrar.UseVisualStyleBackColor = false;
+            Btcerrar.Click += Btcerrar_Click;
+            // 
+            // TxIngreso
+            // 
+            TxIngreso.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            TxIngreso.Location = new Point(54, 106);
+            TxIngreso.Name = "TxIngreso";
+            TxIngreso.Size = new Size(221, 39);
+            TxIngreso.TabIndex = 3;
+            // 
+            // LblMensaje
+            // 
+            LblMensaje.AutoSize = true;
+            LblMensaje.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            LblMensaje.Location = new Point(54, 183);
+            LblMensaje.Name = "LblMensaje";
+            LblMensaje.Size = new Size(0, 32);
+            LblMensaje.TabIndex = 4;
+            // 
             // Do_while
             // 
             AcceptButton = BtSalir;
@@ -52,15 +86,22 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.HotPink;
             ClientSize = new Size(1072, 594);
+            Controls.Add(LblMensaje);
+            Controls.Add(TxIngreso);
+            Controls.Add(Btcerrar);
             Controls.Add(BtSalir);
             Name = "Do_while";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Do_while";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button BtSalir;
+        private Button Btcerrar;
+        private TextBox TxIngreso;
+        private Label LblMensaje;
     }
 }
