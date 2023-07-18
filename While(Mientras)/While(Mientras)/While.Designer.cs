@@ -69,7 +69,7 @@
             BtIniciar.Cursor = Cursors.Hand;
             BtIniciar.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             BtIniciar.ForeColor = SystemColors.Control;
-            BtIniciar.Location = new Point(12, 12);
+            BtIniciar.Location = new Point(428, 12);
             BtIniciar.Name = "BtIniciar";
             BtIniciar.Size = new Size(168, 59);
             BtIniciar.TabIndex = 2;
