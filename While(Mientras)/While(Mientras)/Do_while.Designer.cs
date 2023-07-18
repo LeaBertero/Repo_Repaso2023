@@ -32,6 +32,8 @@
             Btcerrar = new Button();
             TxIngreso = new TextBox();
             LblMensaje = new Label();
+            label1 = new Label();
+            BtNuevo3 = new Button();
             SuspendLayout();
             // 
             // BtSalir
@@ -54,7 +56,7 @@
             Btcerrar.Cursor = Cursors.Hand;
             Btcerrar.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             Btcerrar.ForeColor = SystemColors.Control;
-            Btcerrar.Location = new Point(24, 12);
+            Btcerrar.Location = new Point(100, 229);
             Btcerrar.Name = "Btcerrar";
             Btcerrar.Size = new Size(306, 59);
             Btcerrar.TabIndex = 2;
@@ -65,7 +67,7 @@
             // TxIngreso
             // 
             TxIngreso.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            TxIngreso.Location = new Point(54, 106);
+            TxIngreso.Location = new Point(142, 79);
             TxIngreso.Name = "TxIngreso";
             TxIngreso.Size = new Size(221, 39);
             TxIngreso.TabIndex = 3;
@@ -74,10 +76,34 @@
             // 
             LblMensaje.AutoSize = true;
             LblMensaje.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            LblMensaje.Location = new Point(54, 183);
+            LblMensaje.Location = new Point(142, 156);
             LblMensaje.Name = "LblMensaje";
             LblMensaje.Size = new Size(0, 32);
             LblMensaje.TabIndex = 4;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(12, 19);
+            label1.Name = "label1";
+            label1.Size = new Size(524, 32);
+            label1.TabIndex = 5;
+            label1.Text = "Ingrese salir, para poder cerrar el formulario";
+            // 
+            // BtNuevo3
+            // 
+            BtNuevo3.BackColor = Color.ForestGreen;
+            BtNuevo3.Cursor = Cursors.Hand;
+            BtNuevo3.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            BtNuevo3.ForeColor = SystemColors.Control;
+            BtNuevo3.Location = new Point(794, 12);
+            BtNuevo3.Name = "BtNuevo3";
+            BtNuevo3.Size = new Size(266, 59);
+            BtNuevo3.TabIndex = 6;
+            BtNuevo3.Text = "Nuevo formulario";
+            BtNuevo3.UseVisualStyleBackColor = false;
+            BtNuevo3.Click += BtNuevo3_Click;
             // 
             // Do_while
             // 
@@ -86,6 +112,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.HotPink;
             ClientSize = new Size(1072, 594);
+            Controls.Add(BtNuevo3);
+            Controls.Add(label1);
             Controls.Add(LblMensaje);
             Controls.Add(TxIngreso);
             Controls.Add(Btcerrar);
@@ -103,5 +131,7 @@
         private Button Btcerrar;
         private TextBox TxIngreso;
         private Label LblMensaje;
+        private Label label1;
+        private Button BtNuevo3;
     }
 }

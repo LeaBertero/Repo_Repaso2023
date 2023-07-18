@@ -36,5 +36,10 @@ namespace While_Mientras_
             }
         }
 
+        private void BtNuevo3_Click(object sender, EventArgs e)
+        {
+            var nuevoArrarnque = new FormPrueba();
+            nuevoArrarnque.ShowDialog();
+        }
     }
 }
