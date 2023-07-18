@@ -22,14 +22,22 @@ namespace While_Mientras_
         {
             int anchoFormulario = this.Width;
             int anchoLabel = LblMov.Width;
-            int anchoBorde = 50;
-            //int x = 0;
+            int anchoBorde = 20;
+            int x = 0;
+            int paso = 1;
 
-            for (int x = 0;
-                x < anchoFormulario - anchoLabel - anchoBorde;//variable de anchiborde es innecesaria
-                x++)
+            //for (int x = 0;
+            //    x < anchoFormulario - anchoLabel - anchoBorde;
+            //    x++)
+            //{
+            //    LblMov.Left = x;
+            //    LblMov.Refresh();
+            //}
+
+            while (x < anchoFormulario - anchoLabel - anchoBorde)
             {
                 LblMov.Left = x;
+                x = x + paso;
                 LblMov.Refresh();
             }
         }
