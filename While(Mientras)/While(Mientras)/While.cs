@@ -38,7 +38,7 @@ namespace While_Mientras_
             {
                 LblMov.Left = x;
                 x = x + paso;
-                LblMov.Refresh();
+                this.Refresh();
             }
         }
     }
