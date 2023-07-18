@@ -33,6 +33,9 @@
             BtNuevo = new Button();
             BtIniciar = new Button();
             LblMov = new Label();
+            BtCerrar = new Button();
+            TxSalir = new TextBox();
+            label1 = new Label();
             SuspendLayout();
             // 
             // BtSalir
@@ -85,6 +88,37 @@
             LblMov.Size = new Size(94, 84);
             LblMov.TabIndex = 3;
             // 
+            // BtCerrar
+            // 
+            BtCerrar.BackColor = Color.ForestGreen;
+            BtCerrar.Cursor = Cursors.Hand;
+            BtCerrar.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            BtCerrar.ForeColor = SystemColors.Control;
+            BtCerrar.Location = new Point(31, 388);
+            BtCerrar.Name = "BtCerrar";
+            BtCerrar.Size = new Size(168, 59);
+            BtCerrar.TabIndex = 4;
+            BtCerrar.Text = "cerrar";
+            BtCerrar.UseVisualStyleBackColor = false;            
+            // 
+            // TxSalir
+            // 
+            TxSalir.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            TxSalir.Location = new Point(241, 399);
+            TxSalir.Name = "TxSalir";
+            TxSalir.Size = new Size(187, 39);
+            TxSalir.TabIndex = 5;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(241, 353);
+            label1.Name = "label1";
+            label1.Size = new Size(260, 28);
+            label1.TabIndex = 6;
+            label1.Text = "Para cerrar, escriba \"Salir\"";
+            // 
             // While
             // 
             AcceptButton = BtSalir;
@@ -92,6 +126,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Lime;
             ClientSize = new Size(1019, 555);
+            Controls.Add(label1);
+            Controls.Add(TxSalir);
+            Controls.Add(BtCerrar);
             Controls.Add(LblMov);
             Controls.Add(BtIniciar);
             Controls.Add(BtNuevo);
@@ -102,6 +139,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Ejemplo while - do while";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -110,5 +148,8 @@
         private Button BtNuevo;
         private Button BtIniciar;
         private Label LblMov;
+        private Button BtCerrar;
+        private TextBox TxSalir;
+        private Label label1;
     }
 }
