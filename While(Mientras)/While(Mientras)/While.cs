@@ -50,7 +50,7 @@ namespace While_Mientras_
             }
             else
             {
-                label1.Text = "Debe ingresar un valor";
+                label1.Text = "Ingreso incorrecto";
             }
         }
     }

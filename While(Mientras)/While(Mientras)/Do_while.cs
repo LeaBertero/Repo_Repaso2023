@@ -26,20 +26,18 @@ namespace While_Mientras_
         private void Btcerrar_Click(object sender, EventArgs e)
         {
             //condicion para cerrar el formulario
-            if (TxIngreso.Text == "Salir")
+            if (TxIngreso.Text == "salir")
             {
-                LblMensaje.Text = "Ingreso correcto";
+                Close();
             }
             else
             {
-                LblMensaje.Text = "Debe ingresar un valor";
+                LblMensaje.Text = "Ingreso incorrecto";
             }
+
+
         }
 
-        private void BtNuevo3_Click(object sender, EventArgs e)
-        {
-            var nuevoArrarnque = new FormPrueba();
-            nuevoArrarnque.ShowDialog();
-        }
+
     }
 }

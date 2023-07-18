@@ -33,7 +33,6 @@
             TxIngreso = new TextBox();
             LblMensaje = new Label();
             label1 = new Label();
-            BtNuevo3 = new Button();
             SuspendLayout();
             // 
             // BtSalir
@@ -91,20 +90,6 @@
             label1.TabIndex = 5;
             label1.Text = "Ingrese salir, para poder cerrar el formulario";
             // 
-            // BtNuevo3
-            // 
-            BtNuevo3.BackColor = Color.ForestGreen;
-            BtNuevo3.Cursor = Cursors.Hand;
-            BtNuevo3.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            BtNuevo3.ForeColor = SystemColors.Control;
-            BtNuevo3.Location = new Point(794, 12);
-            BtNuevo3.Name = "BtNuevo3";
-            BtNuevo3.Size = new Size(266, 59);
-            BtNuevo3.TabIndex = 6;
-            BtNuevo3.Text = "Nuevo formulario";
-            BtNuevo3.UseVisualStyleBackColor = false;
-            BtNuevo3.Click += BtNuevo3_Click;
-            // 
             // Do_while
             // 
             AcceptButton = BtSalir;
@@ -112,7 +97,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.HotPink;
             ClientSize = new Size(1072, 594);
-            Controls.Add(BtNuevo3);
             Controls.Add(label1);
             Controls.Add(LblMensaje);
             Controls.Add(TxIngreso);
@@ -132,6 +116,5 @@
         private TextBox TxIngreso;
         private Label LblMensaje;
         private Label label1;
-        private Button BtNuevo3;
     }
 }
