@@ -82,7 +82,7 @@
             // 
             // LblMov
             // 
-            LblMov.BackColor = Color.Red;
+            LblMov.BackColor = Color.PaleGreen;
             LblMov.Location = new Point(0, 117);
             LblMov.Name = "LblMov";
             LblMov.Size = new Size(94, 84);

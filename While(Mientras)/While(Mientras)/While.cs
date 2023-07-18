@@ -46,7 +46,7 @@ namespace While_Mientras_
         {
             if (TxSalir.Text == "salir")
             {
-                Close ();
+                Close();
             }
             else
             {
