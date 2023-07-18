@@ -47,12 +47,14 @@
             // 
             // Do_while
             // 
+            AcceptButton = BtSalir;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.HotPink;
             ClientSize = new Size(1072, 594);
             Controls.Add(BtSalir);
             Name = "Do_while";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Do_while";
             ResumeLayout(false);
         }
