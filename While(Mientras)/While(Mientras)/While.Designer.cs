@@ -80,7 +80,7 @@
             // LblMov
             // 
             LblMov.BackColor = Color.Red;
-            LblMov.Location = new Point(294, 117);
+            LblMov.Location = new Point(0, 117);
             LblMov.Name = "LblMov";
             LblMov.Size = new Size(94, 84);
             LblMov.TabIndex = 3;
