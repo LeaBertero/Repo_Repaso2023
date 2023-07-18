@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Do_while));
             BtSalir = new Button();
+            BtIniciar = new Button();
             SuspendLayout();
             // 
             // BtSalir
@@ -46,6 +47,20 @@
             BtSalir.UseVisualStyleBackColor = false;
             BtSalir.Click += BtSalir_Click;
             // 
+            // BtIniciar
+            // 
+            BtIniciar.BackColor = Color.Gold;
+            BtIniciar.Cursor = Cursors.Hand;
+            BtIniciar.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            BtIniciar.ForeColor = SystemColors.ActiveCaptionText;
+            BtIniciar.Location = new Point(425, 12);
+            BtIniciar.Name = "BtIniciar";
+            BtIniciar.Size = new Size(168, 59);
+            BtIniciar.TabIndex = 2;
+            BtIniciar.Text = "Iniciar";
+            BtIniciar.UseVisualStyleBackColor = false;
+            BtIniciar.Click += BtIniciar_Click;
+            // 
             // Do_while
             // 
             AcceptButton = BtSalir;
@@ -53,6 +68,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Yellow;
             ClientSize = new Size(1072, 594);
+            Controls.Add(BtIniciar);
             Controls.Add(BtSalir);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Do_while";
@@ -64,5 +80,6 @@
         #endregion
 
         private Button BtSalir;
+        private Button BtIniciar;
     }
 }

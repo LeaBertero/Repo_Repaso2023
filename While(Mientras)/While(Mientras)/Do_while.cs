@@ -13,6 +13,13 @@ namespace While_Mientras_
 {
     public partial class Do_while : Form
     {
+
+        int anchoFormulario;
+        int anchoLabel;
+        int anchoBorde;
+        int x = 0;
+        int paso = 1;
+
         public Do_while()
         {
             InitializeComponent();
@@ -23,8 +30,9 @@ namespace While_Mientras_
             Close();
         }
 
+        private void BtIniciar_Click(object sender, EventArgs e)
+        {
 
-
-
+        }
     }
 }
