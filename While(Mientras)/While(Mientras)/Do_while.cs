@@ -23,20 +23,7 @@ namespace While_Mientras_
             Close();
         }
 
-        private void Btcerrar_Click(object sender, EventArgs e)
-        {
-            //condicion para cerrar el formulario
-            if (TxIngreso.Text == "salir")
-            {
-                Close();
-            }
-            else
-            {
-                LblMensaje.Text = "Ingreso incorrecto";
-            }
 
-
-        }
 
 
     }
