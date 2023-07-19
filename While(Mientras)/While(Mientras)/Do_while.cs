@@ -34,5 +34,11 @@ namespace While_Mientras_
         {
 
         }
+
+        private void btContar_Click(object sender, EventArgs e)
+        {
+
+
+        }
     }
 }

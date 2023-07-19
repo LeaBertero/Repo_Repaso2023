@@ -31,6 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Do_while));
             BtSalir = new Button();
             BtIniciar = new Button();
+            btContar = new Button();
+            TxIngreso = new TextBox();
+            LblResultado = new Label();
             SuspendLayout();
             // 
             // BtSalir
@@ -61,6 +64,36 @@
             BtIniciar.UseVisualStyleBackColor = false;
             BtIniciar.Click += BtIniciar_Click;
             // 
+            // btContar
+            // 
+            btContar.BackColor = Color.Gold;
+            btContar.Cursor = Cursors.Hand;
+            btContar.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            btContar.ForeColor = SystemColors.ActiveCaptionText;
+            btContar.Location = new Point(5, 452);
+            btContar.Name = "btContar";
+            btContar.Size = new Size(168, 59);
+            btContar.TabIndex = 3;
+            btContar.Text = "Contar";
+            btContar.UseVisualStyleBackColor = false;
+            btContar.Click += btContar_Click;
+            // 
+            // TxIngreso
+            // 
+            TxIngreso.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            TxIngreso.Location = new Point(213, 465);
+            TxIngreso.Name = "TxIngreso";
+            TxIngreso.Size = new Size(211, 34);
+            TxIngreso.TabIndex = 4;
+            // 
+            // LblResultado
+            // 
+            LblResultado.AutoSize = true;
+            LblResultado.Location = new Point(213, 560);
+            LblResultado.Name = "LblResultado";
+            LblResultado.Size = new Size(0, 20);
+            LblResultado.TabIndex = 5;
+            // 
             // Do_while
             // 
             AcceptButton = BtSalir;
@@ -68,6 +101,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Yellow;
             ClientSize = new Size(1072, 594);
+            Controls.Add(LblResultado);
+            Controls.Add(TxIngreso);
+            Controls.Add(btContar);
             Controls.Add(BtIniciar);
             Controls.Add(BtSalir);
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -75,11 +111,15 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Do_while";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button BtSalir;
         private Button BtIniciar;
+        private Button btContar;
+        private TextBox TxIngreso;
+        private Label LblResultado;
     }
 }
