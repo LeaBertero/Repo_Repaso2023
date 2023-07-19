@@ -19,6 +19,8 @@ namespace While_Mientras_
         int anchoBorde;
         int x;
         int paso;
+        int contador = 0;
+        int Totalcontador = 5;
 
         public Do_while()
         {
@@ -40,6 +42,7 @@ namespace While_Mientras_
                 anchoBorde = 20;
                 x = 0;
                 paso = 1;
+                contador = contador + 1; //contador = contador +1;
 
                 while (true)
                 {
@@ -57,15 +60,15 @@ namespace While_Mientras_
 
                 }
                 
+            } while (contador < Totalcontador);
                 
-
-
-            } while (true);
-
-
-
         }
 
-
     }
+
 }
+
+
+
+
+
