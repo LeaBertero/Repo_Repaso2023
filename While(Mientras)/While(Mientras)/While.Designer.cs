@@ -116,9 +116,9 @@
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label1.Location = new Point(241, 353);
             label1.Name = "label1";
-            label1.Size = new Size(260, 28);
+            label1.Size = new Size(258, 28);
             label1.TabIndex = 6;
-            label1.Text = "Para cerrar, escriba \"Salir\"";
+            label1.Text = "Para cerrar, escriba \"salir\"";
             // 
             // While
             // 
