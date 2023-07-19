@@ -33,7 +33,7 @@
             BtIniciar = new Button();
             btContar = new Button();
             TxIngreso = new TextBox();
-            LblResultado = new Label();
+            LblMov = new Label();
             SuspendLayout();
             // 
             // BtSalir
@@ -76,7 +76,6 @@
             btContar.TabIndex = 3;
             btContar.Text = "Contar";
             btContar.UseVisualStyleBackColor = false;
-            btContar.Click += btContar_Click;
             // 
             // TxIngreso
             // 
@@ -86,13 +85,16 @@
             TxIngreso.Size = new Size(211, 34);
             TxIngreso.TabIndex = 4;
             // 
-            // LblResultado
+            // LblMov
             // 
-            LblResultado.AutoSize = true;
-            LblResultado.Location = new Point(213, 560);
-            LblResultado.Name = "LblResultado";
-            LblResultado.Size = new Size(0, 20);
-            LblResultado.TabIndex = 5;
+            LblMov.BackColor = Color.Goldenrod;
+            LblMov.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            LblMov.Location = new Point(0, 105);
+            LblMov.Name = "LblMov";
+            LblMov.Size = new Size(211, 103);
+            LblMov.TabIndex = 5;
+            LblMov.Text = "Soy un rectángulo";
+            LblMov.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Do_while
             // 
@@ -101,7 +103,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Yellow;
             ClientSize = new Size(1072, 594);
-            Controls.Add(LblResultado);
+            Controls.Add(LblMov);
             Controls.Add(TxIngreso);
             Controls.Add(btContar);
             Controls.Add(BtIniciar);
@@ -120,6 +122,6 @@
         private Button BtIniciar;
         private Button btContar;
         private TextBox TxIngreso;
-        private Label LblResultado;
+        private Label LblMov;
     }
 }

@@ -17,8 +17,8 @@ namespace While_Mientras_
         int anchoFormulario;
         int anchoLabel;
         int anchoBorde;
-        int x = 0;
-        int paso = 1;
+        int x;
+        int paso;
 
         public Do_while()
         {
@@ -33,12 +33,39 @@ namespace While_Mientras_
         private void BtIniciar_Click(object sender, EventArgs e)
         {
 
+            do
+            {
+                anchoFormulario = this.Width;
+                anchoLabel = LblMov.Width;
+                anchoBorde = 20;
+                x = 0;
+                paso = 1;
+
+                while (true)
+                {
+
+                    while(x < (anchoFormulario - anchoBorde - anchoLabel))
+                    {
+                        
+                        LblMov.Left = x;
+                        this.Refresh();
+                        x = x + paso;
+
+
+                    }
+
+
+                }
+                
+                
+
+
+            } while (true);
+
+
+
         }
 
-        private void btContar_Click(object sender, EventArgs e)
-        {
 
-
-        }
     }
 }
