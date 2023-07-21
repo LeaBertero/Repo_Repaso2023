@@ -34,7 +34,7 @@
             BtInicio = new Button();
             lblMensaje = new Label();
             BtSalir = new Button();
-            Bt_Matrices2 = new Button();
+            BtListar = new Button();
             SuspendLayout();
             // 
             // label1
@@ -98,19 +98,15 @@
             BtSalir.UseVisualStyleBackColor = false;
             BtSalir.Click += BtSalir_Click;
             // 
-            // Bt_Matrices2
+            // BtListar
             // 
-            Bt_Matrices2.BackColor = Color.YellowGreen;
-            Bt_Matrices2.Cursor = Cursors.Hand;
-            Bt_Matrices2.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            Bt_Matrices2.ForeColor = SystemColors.ButtonHighlight;
-            Bt_Matrices2.Location = new Point(471, 289);
-            Bt_Matrices2.Name = "Bt_Matrices2";
-            Bt_Matrices2.Size = new Size(168, 51);
-            Bt_Matrices2.TabIndex = 6;
-            Bt_Matrices2.Text = "Matrices_2";
-            Bt_Matrices2.UseVisualStyleBackColor = false;
-            Bt_Matrices2.Click += Bt_Matrices2_Click;
+            BtListar.Location = new Point(792, 146);
+            BtListar.Name = "BtListar";
+            BtListar.Size = new Size(94, 29);
+            BtListar.TabIndex = 6;
+            BtListar.Text = "Listar";
+            BtListar.UseVisualStyleBackColor = true;
+            BtListar.Click += BtListar_Click;
             // 
             // Matrices
             // 
@@ -119,7 +115,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.GreenYellow;
             ClientSize = new Size(1111, 628);
-            Controls.Add(Bt_Matrices2);
+            Controls.Add(BtListar);
             Controls.Add(BtSalir);
             Controls.Add(lblMensaje);
             Controls.Add(BtInicio);
@@ -141,6 +137,6 @@
         private Button BtInicio;
         private Label lblMensaje;
         private Button BtSalir;
-        private Button Bt_Matrices2;
+        private Button BtListar;
     }
 }

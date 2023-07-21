@@ -3,7 +3,7 @@ namespace Matrices
     public partial class Matrices : Form
     {
         //lista de arreglos
-        string[] Lista = new string[10];
+        string[] Lista = new string[3];
         int posicion = 0;
 
         public Matrices()
@@ -18,7 +18,7 @@ namespace Matrices
                 Lista[posicion] = TxIngreso.Text;
                 posicion = posicion + 1;
 
-                LblRes.Text = LblRes.Text + TxIngreso.Text + "\r\n";
+                //LblRes.Text = LblRes.Text + TxIngreso.Text + "\r\n";
 
                 TxIngreso.Text = "";
                 TxIngreso.Focus();
@@ -39,10 +39,14 @@ namespace Matrices
             Close();
         }
 
-        private void Bt_Matrices2_Click(object sender, EventArgs e)
+        private void BtListar_Click(object sender, EventArgs e)
         {
-            var matrices_2 = new Matrices_2();
-            matrices_2.ShowDialog();
+            for (int contador = 0; contador < 2; contador++)
+            {
+                LblRes.Text = LblRes.Text + TxIngreso.Text + "\r\n";
+
+            }
+            
         }
     }
 }
