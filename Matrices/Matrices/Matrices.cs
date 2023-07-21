@@ -38,5 +38,11 @@ namespace Matrices
         {
             Close();
         }
+
+        private void Bt_Matrices2_Click(object sender, EventArgs e)
+        {
+            var matrices_2 = new Matrices_2();
+            matrices_2.ShowDialog();
+        }
     }
 }
