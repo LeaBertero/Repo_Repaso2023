@@ -41,12 +41,18 @@ namespace Matrices
 
         private void BtListar_Click(object sender, EventArgs e)
         {
-            for (int contador = 0; contador < 2; contador++)
+            for (int incremento = 0; incremento < Lista.Length; incremento++)
             {
-                LblRes.Text = LblRes.Text + TxIngreso.Text + "\r\n";
+                LblRes.Text = LblRes.Text + Lista[incremento] + "\r\n";
 
             }
-            
+
+        }
+
+        private void BtBorrar_Click(object sender, EventArgs e)
+        {
+            LblRes.Text = null;
+            TxIngreso.Text = null;
         }
     }
 }

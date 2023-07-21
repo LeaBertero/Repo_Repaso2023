@@ -35,6 +35,7 @@
             lblMensaje = new Label();
             BtSalir = new Button();
             BtListar = new Button();
+            BtBorrar = new Button();
             SuspendLayout();
             // 
             // label1
@@ -49,6 +50,7 @@
             // 
             // TxIngreso
             // 
+            TxIngreso.Cursor = Cursors.IBeam;
             TxIngreso.Location = new Point(135, 146);
             TxIngreso.Name = "TxIngreso";
             TxIngreso.Size = new Size(483, 27);
@@ -68,7 +70,7 @@
             BtInicio.Location = new Point(677, 144);
             BtInicio.Name = "BtInicio";
             BtInicio.Size = new Size(94, 29);
-            BtInicio.TabIndex = 3;
+            BtInicio.TabIndex = 2;
             BtInicio.Text = "comenzar";
             BtInicio.UseVisualStyleBackColor = true;
             BtInicio.Click += BtInicio_Click;
@@ -100,13 +102,23 @@
             // 
             // BtListar
             // 
-            BtListar.Location = new Point(792, 146);
+            BtListar.Location = new Point(792, 144);
             BtListar.Name = "BtListar";
             BtListar.Size = new Size(94, 29);
-            BtListar.TabIndex = 6;
+            BtListar.TabIndex = 3;
             BtListar.Text = "Listar";
             BtListar.UseVisualStyleBackColor = true;
             BtListar.Click += BtListar_Click;
+            // 
+            // BtBorrar
+            // 
+            BtBorrar.Location = new Point(677, 200);
+            BtBorrar.Name = "BtBorrar";
+            BtBorrar.Size = new Size(94, 29);
+            BtBorrar.TabIndex = 4;
+            BtBorrar.Text = "Borrar";
+            BtBorrar.UseVisualStyleBackColor = true;
+            BtBorrar.Click += BtBorrar_Click;
             // 
             // Matrices
             // 
@@ -115,6 +127,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.GreenYellow;
             ClientSize = new Size(1111, 628);
+            Controls.Add(BtBorrar);
             Controls.Add(BtListar);
             Controls.Add(BtSalir);
             Controls.Add(lblMensaje);
@@ -138,5 +151,6 @@
         private Label lblMensaje;
         private Button BtSalir;
         private Button BtListar;
+        private Button BtBorrar;
     }
 }
