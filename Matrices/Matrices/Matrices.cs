@@ -53,6 +53,7 @@ namespace Matrices
         {
             LblRes.Text = null;
             TxIngreso.Text = null;
+            lblMensaje.Text = null;
         }
     }
 }

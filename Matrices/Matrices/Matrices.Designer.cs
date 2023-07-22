@@ -106,7 +106,7 @@
             BtListar.Name = "BtListar";
             BtListar.Size = new Size(94, 29);
             BtListar.TabIndex = 3;
-            BtListar.Text = "Listar";
+            BtListar.Text = "Mostrar";
             BtListar.UseVisualStyleBackColor = true;
             BtListar.Click += BtListar_Click;
             // 
