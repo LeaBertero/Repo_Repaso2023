@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Matrices_2));
             BtAgregar = new Button();
             BtSalir = new Button();
             TXingreso = new TextBox();
@@ -75,12 +76,15 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.PaleGoldenrod;
             ClientSize = new Size(1358, 595);
             Controls.Add(label1);
             Controls.Add(TXingreso);
             Controls.Add(BtSalir);
             Controls.Add(BtAgregar);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Matrices_2";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Matrices_2";
             ResumeLayout(false);
             PerformLayout();
