@@ -38,7 +38,7 @@ namespace Matrices
 
             //LblRes.Text = LblRes.Text + TXingreso.Text + "\r\n";
 
-            TXingreso.Text = null;
+            TXingreso.Text = "";
             TXingreso.Focus();
         }
 
@@ -54,6 +54,7 @@ namespace Matrices
         private void BtDimension_Click(object sender, EventArgs e)
         {
             Lista = new string[Convert.ToInt32(TxCantidad.Text)];
+            posicion = 0;
             BtAgregar.Enabled = true;
             Btlistar.Enabled = true;
         }
