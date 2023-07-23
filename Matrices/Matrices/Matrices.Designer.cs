@@ -36,6 +36,7 @@
             BtSalir = new Button();
             BtListar = new Button();
             BtBorrar = new Button();
+            matriz2 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -120,6 +121,20 @@
             BtBorrar.UseVisualStyleBackColor = true;
             BtBorrar.Click += BtBorrar_Click;
             // 
+            // matriz2
+            // 
+            matriz2.BackColor = Color.YellowGreen;
+            matriz2.Cursor = Cursors.Hand;
+            matriz2.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            matriz2.ForeColor = Color.White;
+            matriz2.Location = new Point(23, 539);
+            matriz2.Name = "matriz2";
+            matriz2.Size = new Size(181, 65);
+            matriz2.TabIndex = 6;
+            matriz2.Text = "Matrices 2";
+            matriz2.UseVisualStyleBackColor = false;
+            matriz2.Click += matriz2_Click;
+            // 
             // Matrices
             // 
             AcceptButton = BtInicio;
@@ -127,6 +142,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.GreenYellow;
             ClientSize = new Size(1111, 628);
+            Controls.Add(matriz2);
             Controls.Add(BtBorrar);
             Controls.Add(BtListar);
             Controls.Add(BtSalir);
@@ -152,5 +168,6 @@
         private Button BtSalir;
         private Button BtListar;
         private Button BtBorrar;
+        private Button matriz2;
     }
 }

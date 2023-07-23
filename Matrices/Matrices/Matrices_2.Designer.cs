@@ -33,6 +33,8 @@
             BtSalir = new Button();
             TXingreso = new TextBox();
             label1 = new Label();
+            Btlistar = new Button();
+            LblRes = new Label();
             SuspendLayout();
             // 
             // BtAgregar
@@ -41,8 +43,9 @@
             BtAgregar.Name = "BtAgregar";
             BtAgregar.Size = new Size(183, 37);
             BtAgregar.TabIndex = 0;
-            BtAgregar.Text = "aceptar";
+            BtAgregar.Text = "Ingresar";
             BtAgregar.UseVisualStyleBackColor = true;
+            BtAgregar.Click += BtAgregar_Click;
             // 
             // BtSalir
             // 
@@ -72,12 +75,34 @@
             label1.TabIndex = 3;
             label1.Text = "Programa Dimensiones -  Segunda parte";
             // 
+            // Btlistar
+            // 
+            Btlistar.Location = new Point(613, 241);
+            Btlistar.Name = "Btlistar";
+            Btlistar.Size = new Size(183, 44);
+            Btlistar.TabIndex = 4;
+            Btlistar.Text = "Listar";
+            Btlistar.UseVisualStyleBackColor = true;
+            Btlistar.Click += Btlistar_Click;
+            // 
+            // LblRes
+            // 
+            LblRes.AutoSize = true;
+            LblRes.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            LblRes.Location = new Point(203, 287);
+            LblRes.Name = "LblRes";
+            LblRes.Size = new Size(0, 32);
+            LblRes.TabIndex = 5;
+            // 
             // Matrices_2
             // 
+            AcceptButton = BtAgregar;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PaleGoldenrod;
             ClientSize = new Size(1358, 595);
+            Controls.Add(LblRes);
+            Controls.Add(Btlistar);
             Controls.Add(label1);
             Controls.Add(TXingreso);
             Controls.Add(BtSalir);
@@ -96,5 +121,7 @@
         private Button BtSalir;
         private TextBox TXingreso;
         private Label label1;
+        private Button Btlistar;
+        private Label LblRes;
     }
 }

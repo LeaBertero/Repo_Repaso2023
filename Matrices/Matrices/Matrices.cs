@@ -55,5 +55,11 @@ namespace Matrices
             TxIngreso.Text = null;
             lblMensaje.Text = null;
         }
+
+        private void matriz2_Click(object sender, EventArgs e)
+        {
+            var matrices2 = new Matrices_2();
+            matrices2.ShowDialog();
+        }
     }
 }
