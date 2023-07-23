@@ -35,13 +35,18 @@
             label1 = new Label();
             Btlistar = new Button();
             LblRes = new Label();
+            BtDimension = new Button();
+            label2 = new Label();
+            TxCantidad = new TextBox();
+            label3 = new Label();
             SuspendLayout();
             // 
             // BtAgregar
             // 
-            BtAgregar.Location = new Point(613, 189);
+            BtAgregar.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            BtAgregar.Location = new Point(443, 189);
             BtAgregar.Name = "BtAgregar";
-            BtAgregar.Size = new Size(183, 37);
+            BtAgregar.Size = new Size(97, 37);
             BtAgregar.TabIndex = 0;
             BtAgregar.Text = "Ingresar";
             BtAgregar.UseVisualStyleBackColor = true;
@@ -62,14 +67,14 @@
             // 
             TXingreso.Location = new Point(203, 194);
             TXingreso.Name = "TXingreso";
-            TXingreso.Size = new Size(363, 27);
+            TXingreso.Size = new Size(225, 27);
             TXingreso.TabIndex = 2;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 32F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(168, 27);
+            label1.Location = new Point(171, 27);
             label1.Name = "label1";
             label1.Size = new Size(1053, 72);
             label1.TabIndex = 3;
@@ -77,9 +82,10 @@
             // 
             // Btlistar
             // 
-            Btlistar.Location = new Point(613, 241);
+            Btlistar.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            Btlistar.Location = new Point(546, 189);
             Btlistar.Name = "Btlistar";
-            Btlistar.Size = new Size(183, 44);
+            Btlistar.Size = new Size(71, 37);
             Btlistar.TabIndex = 4;
             Btlistar.Text = "Listar";
             Btlistar.UseVisualStyleBackColor = true;
@@ -89,10 +95,46 @@
             // 
             LblRes.AutoSize = true;
             LblRes.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            LblRes.Location = new Point(203, 287);
+            LblRes.Location = new Point(203, 276);
             LblRes.Name = "LblRes";
             LblRes.Size = new Size(0, 32);
             LblRes.TabIndex = 5;
+            // 
+            // BtDimension
+            // 
+            BtDimension.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            BtDimension.Location = new Point(315, 134);
+            BtDimension.Name = "BtDimension";
+            BtDimension.Size = new Size(113, 47);
+            BtDimension.TabIndex = 6;
+            BtDimension.Text = "Dimensionar";
+            BtDimension.UseVisualStyleBackColor = true;
+            BtDimension.Click += BtDimension_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(113, 144);
+            label2.Name = "label2";
+            label2.Size = new Size(69, 20);
+            label2.TabIndex = 7;
+            label2.Text = "Cantidad";
+            // 
+            // TxCantidad
+            // 
+            TxCantidad.Location = new Point(203, 141);
+            TxCantidad.Name = "TxCantidad";
+            TxCantidad.Size = new Size(98, 27);
+            TxCantidad.TabIndex = 8;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(118, 197);
+            label3.Name = "label3";
+            label3.Size = new Size(64, 20);
+            label3.TabIndex = 9;
+            label3.Text = "Nombre";
             // 
             // Matrices_2
             // 
@@ -101,6 +143,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PaleGoldenrod;
             ClientSize = new Size(1358, 595);
+            Controls.Add(label3);
+            Controls.Add(TxCantidad);
+            Controls.Add(label2);
+            Controls.Add(BtDimension);
             Controls.Add(LblRes);
             Controls.Add(Btlistar);
             Controls.Add(label1);
@@ -123,5 +169,9 @@
         private Label label1;
         private Button Btlistar;
         private Label LblRes;
+        private Button BtDimension;
+        private Label label2;
+        private TextBox TxCantidad;
+        private Label label3;
     }
 }
