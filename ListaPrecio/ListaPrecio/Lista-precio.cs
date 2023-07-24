@@ -14,16 +14,17 @@ namespace ListaPrecio
     {
         //matrices
         private string[,] Producto = new string[3, 2];
-        private decimal[] Precio = new decimal[3];
+        decimal[] Precio = new decimal[3];
 
         private int Fila = 0;
 
+        //constructores
         public Lista_precio()
         {
             InitializeComponent();
         }
 
-        private void BtSalir_Click(object sender, EventArgs e)
+        private void BtSalir_Click(object sender, EventArgs botonCerrar)
         {
             Close();
             BtSalir.Focus();
@@ -64,6 +65,15 @@ namespace ListaPrecio
         private void BtListar_Click(object sender, EventArgs e)
         {
             BtListar.Focus();
+
+            for (int incremento = 0; incremento < Precio.Length; incremento++)
+            {
+                lblListaPrecio.Text = lblListaPrecio.Text +
+                    Producto[incremento, 0] + " " +
+                    Producto[incremento, 1] + " .. " +
+                    Precio[incremento].ToString()
+                    + "\r\n";
+            }
         }
     }
 }

@@ -36,11 +36,12 @@
             TxCodigo = new TextBox();
             TxProducto = new TextBox();
             TxPrecio = new TextBox();
-            label5 = new Label();
+            lblListaPrecio = new Label();
             BtAceptar = new Button();
             BtListar = new Button();
             BtSalir = new Button();
             LblError = new Label();
+            label5 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -104,15 +105,14 @@
             TxPrecio.Size = new Size(125, 27);
             TxPrecio.TabIndex = 3;
             // 
-            // label5
+            // lblListaPrecio
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(830, 111);
-            label5.Name = "label5";
-            label5.Size = new Size(179, 41);
-            label5.TabIndex = 7;
-            label5.Text = "Lista precio";
+            lblListaPrecio.AutoSize = true;
+            lblListaPrecio.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblListaPrecio.Location = new Point(831, 224);
+            lblListaPrecio.Name = "lblListaPrecio";
+            lblListaPrecio.Size = new Size(0, 41);
+            lblListaPrecio.TabIndex = 7;
             // 
             // BtAceptar
             // 
@@ -168,6 +168,16 @@
             LblError.TabIndex = 8;
             LblError.Visible = false;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(831, 130);
+            label5.Name = "label5";
+            label5.Size = new Size(235, 41);
+            label5.TabIndex = 9;
+            label5.Text = "Lista de precios";
+            // 
             // Lista_precio
             // 
             AcceptButton = BtAceptar;
@@ -175,11 +185,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Chartreuse;
             ClientSize = new Size(1275, 589);
+            Controls.Add(label5);
             Controls.Add(LblError);
             Controls.Add(BtSalir);
             Controls.Add(BtListar);
             Controls.Add(BtAceptar);
-            Controls.Add(label5);
+            Controls.Add(lblListaPrecio);
             Controls.Add(TxPrecio);
             Controls.Add(TxProducto);
             Controls.Add(TxCodigo);
@@ -204,10 +215,11 @@
         private TextBox TxCodigo;
         private TextBox TxProducto;
         private TextBox TxPrecio;
-        private Label label5;
+        private Label lblListaPrecio;
         private Button BtAceptar;
         private Button BtListar;
         private Button BtSalir;
         private Label LblError;
+        private Label label5;
     }
 }
