@@ -40,6 +40,7 @@
             BtAceptar = new Button();
             BtListar = new Button();
             BtSalir = new Button();
+            LblError = new Label();
             SuspendLayout();
             // 
             // label1
@@ -76,7 +77,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(190, 9);
+            label4.Location = new Point(171, 9);
             label4.Name = "label4";
             label4.Size = new Size(964, 81);
             label4.TabIndex = 3;
@@ -155,6 +156,18 @@
             BtSalir.UseVisualStyleBackColor = false;
             BtSalir.Click += BtSalir_Click;
             // 
+            // LblError
+            // 
+            LblError.AutoSize = true;
+            LblError.BackColor = Color.Black;
+            LblError.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            LblError.ForeColor = SystemColors.Control;
+            LblError.Location = new Point(412, 531);
+            LblError.Name = "LblError";
+            LblError.Size = new Size(0, 32);
+            LblError.TabIndex = 8;
+            LblError.Visible = false;
+            // 
             // Lista_precio
             // 
             AcceptButton = BtAceptar;
@@ -162,6 +175,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Chartreuse;
             ClientSize = new Size(1275, 589);
+            Controls.Add(LblError);
             Controls.Add(BtSalir);
             Controls.Add(BtListar);
             Controls.Add(BtAceptar);
@@ -194,5 +208,6 @@
         private Button BtAceptar;
         private Button BtListar;
         private Button BtSalir;
+        private Label LblError;
     }
 }

@@ -17,7 +17,7 @@ namespace ListaPrecio
         private decimal[] Precio = new decimal[3];
 
         private int Fila = 0;
-        
+
         public Lista_precio()
         {
             InitializeComponent();
@@ -34,15 +34,29 @@ namespace ListaPrecio
         {
             BtAceptar.Focus();
 
-            //matriz bidimensional
-            Producto[Fila, 0] = TxCodigo.Text;
-            Producto[Fila, 1] = TxProducto.Text;
 
-            //Matriz unidimensional
-            Precio[Fila] = Convert.ToDecimal(TxPrecio.Text);
+            if (Fila > 2)
+            {
+                LblError.Text = "Solo se aceptan 3 productos";
+                LblError.Visible = true;
+            }
+            else
+            {
+                //matriz bidimensional
+                Producto[Fila, 0] = TxCodigo.Text;
+                Producto[Fila, 1] = TxProducto.Text;
 
-            //contador de fila, para pasar a ka siguiente carga de producto
-            Fila = Fila + 1;
+                //Matriz unidimensional
+                Precio[Fila] = Convert.ToDecimal(TxPrecio.Text);
+
+                //contador de fila, para pasar a ka siguiente carga de producto
+                Fila = Fila + 1;
+
+                TxCodigo.Text = null;
+                TxPrecio.Text = null;
+                TxProducto.Text = null;
+
+            }
 
 
         }
