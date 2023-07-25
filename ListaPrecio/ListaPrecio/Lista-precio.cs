@@ -66,6 +66,8 @@ namespace ListaPrecio
         {
             BtListar.Focus();
 
+            //lblListaPrecio.Text = "Lista de precios" + "\r\n";
+
             for (int incremento = 0; incremento < Precio.Length; incremento++)
             {
                 lblListaPrecio.Text = lblListaPrecio.Text +
