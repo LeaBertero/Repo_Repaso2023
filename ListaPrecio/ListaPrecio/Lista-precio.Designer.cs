@@ -202,6 +202,7 @@
             Name = "Lista_precio";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Lista_precio";
+            
             ResumeLayout(false);
             PerformLayout();
         }

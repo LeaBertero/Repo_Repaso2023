@@ -12,7 +12,7 @@ namespace ListaPrecio
 {
     public partial class Lista_precio : Form
     {
-        //matrices
+        //matrices [,] = dos dimensiones
         private string[,] Producto = new string[3, 2];
         decimal[] Precio = new decimal[3];
 
@@ -77,5 +77,7 @@ namespace ListaPrecio
                     + "\r\n";
             }
         }
+
+      
     }
 }
