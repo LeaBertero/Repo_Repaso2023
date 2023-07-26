@@ -13,8 +13,8 @@ namespace ListaPrecio
     public partial class Lista_precio : Form
     {
         //matrices [,] = dos dimensiones
-        private string[,] Producto = new string[3, 2];
-        decimal[] Precio = new decimal[3];
+        private string[,] Producto = new string[3, 2]; //3 filas - 2 columnas
+        decimal[] Precio = new decimal[3]; //Matriz de 3 filas
 
         private int Fila = 0;
 
