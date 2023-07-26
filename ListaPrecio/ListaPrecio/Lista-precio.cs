@@ -19,7 +19,7 @@ namespace ListaPrecio
         private int Fila = 0;
 
         //constructores
-        public Lista_precio()
+        public Lista_precio() //<-- Clase
         {
             InitializeComponent();
         }
@@ -58,8 +58,6 @@ namespace ListaPrecio
                 TxProducto.Text = null;
 
             }
-
-
         }
 
         private void BtListar_Click(object sender, EventArgs e)
