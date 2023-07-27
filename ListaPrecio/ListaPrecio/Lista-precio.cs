@@ -16,12 +16,13 @@ namespace ListaPrecio
         private string[,] Producto = new string[3, 2]; //3 filas - 2 columnas
         decimal[] Precio = new decimal[3]; //Matriz de 3 filas
 
-        private int Fila = 0;
+        //Fila, es una variable privada que solamente se utiliza en el boton aceptar y se utiliza en la clase formulario
+        private int Posicion = 0; //Variable --Inicialmente con un valor de cero
 
-        //constructores
+        //constructor
         public Lista_precio() //<-- Clase
         {
-            InitializeComponent();
+            InitializeComponent(); // --> Metodo
         }
 
         private void BtSalir_Click(object sender, EventArgs botonCerrar)
@@ -33,10 +34,10 @@ namespace ListaPrecio
 
         private void BtAceptar_Click(object sender, EventArgs e)
         {
+
             BtAceptar.Focus();
 
-
-            if (Fila > 2)
+            if (Posicion >= 2)
             {
                 LblError.Text = "Solo se aceptan 3 productos";
                 LblError.Visible = true;
@@ -44,14 +45,15 @@ namespace ListaPrecio
             else
             {
                 //matriz bidimensional
-                Producto[Fila, 0] = TxCodigo.Text;
-                Producto[Fila, 1] = TxProducto.Text;
+                Producto[Posicion, 0] = TxCodigo.Text;
+                Producto[Posicion, 1] = TxProducto.Text;
 
                 //Matriz unidimensional
-                Precio[Fila] = Convert.ToDecimal(TxPrecio.Text);
+                Precio[Posicion] = Convert.ToDecimal(TxPrecio.Text);
 
-                //contador de fila, para pasar a ka siguiente carga de producto
-                Fila = Fila + 1;
+                //contador de posicion, para que vaya incrementando el conteo de los productos los codigos y los precios 
+                //a medidda que se vayan ingresando
+                Posicion = Posicion + 1;
 
                 TxCodigo.Text = null;
                 TxPrecio.Text = null;
@@ -69,8 +71,8 @@ namespace ListaPrecio
             for (int incremento = 0; incremento < Precio.Length; incremento++)
             {
                 lblListaPrecio.Text = lblListaPrecio.Text +
-                    Producto[incremento, 0] + " " +
-                    Producto[incremento, 1] + " .. " +
+                    Producto[incremento, 0] + " - " +
+                    Producto[incremento, 1] + " - " +
                     Precio[incremento].ToString()
                     + "\r\n";
             }
