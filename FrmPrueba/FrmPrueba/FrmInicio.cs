@@ -12,9 +12,31 @@ namespace FrmPrueba
 {
     public partial class FrmInicio : Form
     {
+
+        int operador1;
+        int operador2;
+        int resultado;
         public FrmInicio()
         {
             InitializeComponent();
+        }
+
+        private void BtRes_Click(object sender, EventArgs e)
+        {
+            LblRes.Visible = true;
+
+            operador1 = Convert.ToInt32(TxtOper1.Text);
+            operador2 = Convert.ToInt32(TxtOper2.Text);
+
+            resultado = operador1 + operador2;
+
+            LblRes.Text = resultado.ToString();
+
+        }
+
+        private void BtCerrar_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
