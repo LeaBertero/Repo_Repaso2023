@@ -30,79 +30,74 @@
         {
             label1 = new Label();
             label2 = new Label();
-            TxtOper1 = new TextBox();
-            TxtOper2 = new TextBox();
-            label3 = new Label();
+            TxNum1 = new TextBox();
+            TxNum2 = new TextBox();
             BtRes = new Button();
             LblRes = new Label();
             BtCerrar = new Button();
+            TxOperador = new TextBox();
+            label3 = new Label();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(52, 80);
+            label1.Location = new Point(245, 116);
             label1.Name = "label1";
-            label1.Size = new Size(85, 20);
+            label1.Size = new Size(75, 20);
             label1.TabIndex = 0;
-            label1.Text = "Operador 1";
+            label1.Text = "Número 1";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(301, 80);
+            label2.Location = new Point(572, 116);
             label2.Name = "label2";
-            label2.Size = new Size(85, 20);
+            label2.Size = new Size(75, 20);
             label2.TabIndex = 1;
-            label2.Text = "Operador 2";
+            label2.Text = "Número 2";
             // 
-            // TxtOper1
+            // TxNum1
             // 
-            TxtOper1.Location = new Point(52, 138);
-            TxtOper1.Name = "TxtOper1";
-            TxtOper1.Size = new Size(125, 27);
-            TxtOper1.TabIndex = 2;
+            TxNum1.Location = new Point(245, 174);
+            TxNum1.Name = "TxNum1";
+            TxNum1.Size = new Size(125, 27);
+            TxNum1.TabIndex = 1;
+            TxNum1.TextAlign = HorizontalAlignment.Center;
             // 
-            // TxtOper2
+            // TxNum2
             // 
-            TxtOper2.Location = new Point(301, 138);
-            TxtOper2.Name = "TxtOper2";
-            TxtOper2.Size = new Size(125, 27);
-            TxtOper2.TabIndex = 3;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(226, 140);
-            label3.Name = "label3";
-            label3.Size = new Size(19, 20);
-            label3.TabIndex = 4;
-            label3.Text = "+";
+            TxNum2.Location = new Point(572, 174);
+            TxNum2.Name = "TxNum2";
+            TxNum2.Size = new Size(125, 27);
+            TxNum2.TabIndex = 3;
+            TxNum2.TextAlign = HorizontalAlignment.Center;
             // 
             // BtRes
             // 
-            BtRes.Location = new Point(475, 136);
+            BtRes.BackColor = Color.Goldenrod;
+            BtRes.Cursor = Cursors.Hand;
+            BtRes.Location = new Point(746, 172);
             BtRes.Name = "BtRes";
             BtRes.Size = new Size(94, 29);
-            BtRes.TabIndex = 5;
+            BtRes.TabIndex = 4;
             BtRes.Text = "=";
-            BtRes.UseVisualStyleBackColor = true;
+            BtRes.UseVisualStyleBackColor = false;
             BtRes.Click += BtRes_Click;
             // 
             // LblRes
             // 
             LblRes.AutoSize = true;
-            LblRes.Location = new Point(645, 140);
+            LblRes.Location = new Point(916, 176);
             LblRes.Name = "LblRes";
-            LblRes.Size = new Size(85, 20);
+            LblRes.Size = new Size(0, 20);
             LblRes.TabIndex = 6;
-            LblRes.Text = "Operador 2";
             LblRes.Visible = false;
             // 
             // BtCerrar
             // 
             BtCerrar.Cursor = Cursors.Hand;
-            BtCerrar.Location = new Point(645, 409);
+            BtCerrar.Location = new Point(12, 310);
             BtCerrar.Name = "BtCerrar";
             BtCerrar.Size = new Size(94, 29);
             BtCerrar.TabIndex = 7;
@@ -110,20 +105,42 @@
             BtCerrar.UseVisualStyleBackColor = true;
             BtCerrar.Click += BtCerrar_Click;
             // 
+            // TxOperador
+            // 
+            TxOperador.Location = new Point(431, 176);
+            TxOperador.Name = "TxOperador";
+            TxOperador.Size = new Size(61, 27);
+            TxOperador.TabIndex = 2;
+            TxOperador.TextAlign = HorizontalAlignment.Center;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(384, 99);
+            label3.Name = "label3";
+            label3.Size = new Size(153, 41);
+            label3.TabIndex = 9;
+            label3.Text = "Operador";
+            // 
             // FrmInicio
             // 
+            AcceptButton = BtRes;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.Yellow;
+            ClientSize = new Size(1157, 351);
+            Controls.Add(label3);
+            Controls.Add(TxOperador);
             Controls.Add(BtCerrar);
             Controls.Add(LblRes);
             Controls.Add(BtRes);
-            Controls.Add(label3);
-            Controls.Add(TxtOper2);
-            Controls.Add(TxtOper1);
+            Controls.Add(TxNum2);
+            Controls.Add(TxNum1);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "FrmInicio";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmInicio";
             ResumeLayout(false);
             PerformLayout();
@@ -133,11 +150,12 @@
 
         private Label label1;
         private Label label2;
-        private TextBox TxtOper1;
-        private TextBox TxtOper2;
-        private Label label3;
+        private TextBox TxNum1;
+        private TextBox TxNum2;
         private Button BtRes;
         private Label LblRes;
         private Button BtCerrar;
+        private TextBox TxOperador;
+        private Label label3;
     }
 }

@@ -23,14 +23,62 @@ namespace FrmPrueba
 
         private void BtRes_Click(object sender, EventArgs e)
         {
-            LblRes.Visible = true;
+            try
+            {
+                if (TxOperador.Text == "+")
+                {
+                    LblRes.Visible = true;
 
-            operador1 = Convert.ToInt32(TxtOper1.Text);
-            operador2 = Convert.ToInt32(TxtOper2.Text);
+                    operador1 = Convert.ToInt32(TxNum1.Text);
+                    operador2 = Convert.ToInt32(TxNum2.Text);
 
-            resultado = operador1 + operador2;
+                    resultado = operador1 + operador2;
 
-            LblRes.Text = resultado.ToString();
+                    LblRes.Text = resultado.ToString();
+                }
+                else if (TxOperador.Text == "-")
+                {
+                    LblRes.Visible = true;
+
+                    operador1 = Convert.ToInt32(TxNum1.Text);
+                    operador2 = Convert.ToInt32(TxNum2.Text);
+
+                    resultado = operador1 - operador2;
+
+                    LblRes.Text = resultado.ToString();
+                }
+                else if (TxOperador.Text == "*")
+                {
+                    LblRes.Visible = true;
+
+                    operador1 = Convert.ToInt32(TxNum1.Text);
+                    operador2 = Convert.ToInt32(TxNum2.Text);
+
+                    resultado = operador1 * operador2;
+
+                    LblRes.Text = resultado.ToString();
+                }
+                else if (TxOperador.Text == "/")
+                {
+                    LblRes.Visible = true;
+
+                    operador1 = Convert.ToInt32(TxNum1.Text);
+                    operador2 = Convert.ToInt32(TxNum2.Text);
+
+                    resultado = operador1 / operador2;
+
+                    LblRes.Text = resultado.ToString();
+                }
+                
+
+            }
+            catch
+           (Exception)
+            {
+
+                MessageBox.Show("No puede ingresar valores no autorizados");
+
+            }
 
         }
 
@@ -38,5 +86,6 @@ namespace FrmPrueba
         {
             Close();
         }
+
     }
 }
