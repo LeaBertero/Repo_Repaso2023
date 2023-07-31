@@ -19,7 +19,7 @@ namespace Cadena_dato
             string cadena;
             LblRes.Text = TXDato.Text;
 
-            cadena = TXDato.Text.Substring(0,1).ToUpper() + TXDato.Text.Substring(1).ToLower(); ;
+            cadena = TXDato.Text.Substring(0, 1).ToUpper() + TXDato.Text.Substring(1).ToLower(); ;
 
             LblRes.Text = cadena;
             //cadena = TXDato.Text.Trim();

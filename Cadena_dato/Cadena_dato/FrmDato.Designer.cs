@@ -32,13 +32,15 @@
             Btconvert = new Button();
             TXDato = new TextBox();
             LblRes = new Label();
+            label1 = new Label();
             SuspendLayout();
             // 
             // BtSalir
             // 
-            BtSalir.Location = new Point(694, 409);
+            BtSalir.Cursor = Cursors.Hand;
+            BtSalir.Location = new Point(366, 406);
             BtSalir.Name = "BtSalir";
-            BtSalir.Size = new Size(94, 29);
+            BtSalir.Size = new Size(259, 29);
             BtSalir.TabIndex = 0;
             BtSalir.Text = "Salir";
             BtSalir.UseVisualStyleBackColor = true;
@@ -46,7 +48,7 @@
             // 
             // Btconvert
             // 
-            Btconvert.Location = new Point(36, 94);
+            Btconvert.Location = new Point(366, 145);
             Btconvert.Name = "Btconvert";
             Btconvert.Size = new Size(259, 55);
             Btconvert.TabIndex = 1;
@@ -56,7 +58,7 @@
             // 
             // TXDato
             // 
-            TXDato.Location = new Point(36, 49);
+            TXDato.Location = new Point(366, 100);
             TXDato.Name = "TXDato";
             TXDato.Size = new Size(259, 27);
             TXDato.TabIndex = 2;
@@ -65,23 +67,37 @@
             // 
             LblRes.AutoSize = true;
             LblRes.Font = new Font("Segoe UI", 32F, FontStyle.Regular, GraphicsUnit.Point);
-            LblRes.Location = new Point(98, 195);
+            LblRes.Location = new Point(428, 246);
             LblRes.Name = "LblRes";
             LblRes.Size = new Size(172, 72);
             LblRes.TabIndex = 3;
             LblRes.Text = "label1";
             LblRes.Visible = false;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 32F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(12, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(982, 72);
+            label1.TabIndex = 4;
+            label1.Text = "Ingrese una frase para poder convertirla";
+            label1.Visible = false;
+            // 
             // FrmDato
             // 
+            AcceptButton = Btconvert;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1029, 450);
+            Controls.Add(label1);
             Controls.Add(LblRes);
             Controls.Add(TXDato);
             Controls.Add(Btconvert);
             Controls.Add(BtSalir);
             Name = "FrmDato";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "prueba de ingreso de datos ";
             ResumeLayout(false);
             PerformLayout();
@@ -93,5 +109,6 @@
         private Button Btconvert;
         private TextBox TXDato;
         private Label LblRes;
+        private Label label1;
     }
 }
