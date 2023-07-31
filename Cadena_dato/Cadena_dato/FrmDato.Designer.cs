@@ -67,7 +67,7 @@
             // 
             LblRes.AutoSize = true;
             LblRes.Font = new Font("Segoe UI", 32F, FontStyle.Regular, GraphicsUnit.Point);
-            LblRes.Location = new Point(428, 246);
+            LblRes.Location = new Point(227, 265);
             LblRes.Name = "LblRes";
             LblRes.Size = new Size(172, 72);
             LblRes.TabIndex = 3;
@@ -83,7 +83,6 @@
             label1.Size = new Size(982, 72);
             label1.TabIndex = 4;
             label1.Text = "Ingrese una frase para poder convertirla";
-            label1.Visible = false;
             // 
             // FrmDato
             // 
