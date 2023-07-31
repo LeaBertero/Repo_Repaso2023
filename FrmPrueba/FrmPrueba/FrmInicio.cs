@@ -69,7 +69,7 @@ namespace FrmPrueba
 
                     LblRes.Text = resultado.ToString();
                 }
-                
+
 
             }
             catch
@@ -87,5 +87,6 @@ namespace FrmPrueba
             Close();
         }
 
+       
     }
 }

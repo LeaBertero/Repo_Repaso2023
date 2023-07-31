@@ -72,6 +72,7 @@
             TxNum2.Size = new Size(125, 27);
             TxNum2.TabIndex = 3;
             TxNum2.TextAlign = HorizontalAlignment.Center;
+            
             // 
             // BtRes
             // 
