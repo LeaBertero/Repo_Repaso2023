@@ -81,7 +81,7 @@
             lblMensaje.AutoSize = true;
             lblMensaje.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblMensaje.ForeColor = Color.White;
-            lblMensaje.Location = new Point(135, 554);
+            lblMensaje.Location = new Point(12, 554);
             lblMensaje.Name = "lblMensaje";
             lblMensaje.Size = new Size(0, 32);
             lblMensaje.TabIndex = 4;
@@ -127,7 +127,7 @@
             matriz2.Cursor = Cursors.Hand;
             matriz2.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             matriz2.ForeColor = Color.White;
-            matriz2.Location = new Point(23, 539);
+            matriz2.Location = new Point(12, 422);
             matriz2.Name = "matriz2";
             matriz2.Size = new Size(181, 65);
             matriz2.TabIndex = 6;

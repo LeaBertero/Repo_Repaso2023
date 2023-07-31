@@ -10,22 +10,16 @@ using System.Windows.Forms;
 
 namespace oper_parte2
 {
-    public partial class FormOperadores : Form
+    public partial class segundoFrm : Form
     {
-        public FormOperadores()
+        public segundoFrm()
         {
             InitializeComponent();
         }
 
-        private void BtSalir_Click(object sender, EventArgs e)
+        private void btclose_Click(object sender, EventArgs e)
         {
             Close();
-        }
-
-        private void FrmSegundo_Click(object sender, EventArgs e)
-        {
-            var segundo = new segundoFrm();
-            segundo.ShowDialog();
         }
     }
 }
