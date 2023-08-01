@@ -23,7 +23,7 @@ namespace Operadores
             //LblResultado.Text = Txoper1.Text + Txoper2.Text;
             LblResultado.Text = Convert.ToString(res);
 
-            
+
         }
 
         private void FrmInicio_Load(object sender, EventArgs e)
@@ -36,6 +36,12 @@ namespace Operadores
             Txoper1.Text = null;
             Txoper2.Text = null;
             LblResultado.Text = null;
+        }
+
+        private void BtNuevo_Click(object sender, EventArgs e)
+        {
+            var segundoform = new Oper2();
+            segundoform.ShowDialog();
         }
     }
 }

@@ -37,6 +37,7 @@
             BtSalir = new Button();
             label2 = new Label();
             BtLimpiar = new Button();
+            BtNuevo = new Button();
             SuspendLayout();
             // 
             // BtCalcular
@@ -133,12 +134,27 @@
             BtLimpiar.UseVisualStyleBackColor = false;
             BtLimpiar.Click += BtLimpiar_Click;
             // 
+            // BtNuevo
+            // 
+            BtNuevo.BackColor = Color.SteelBlue;
+            BtNuevo.Cursor = Cursors.Hand;
+            BtNuevo.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            BtNuevo.ForeColor = Color.White;
+            BtNuevo.Location = new Point(65, 555);
+            BtNuevo.Name = "BtNuevo";
+            BtNuevo.Size = new Size(429, 56);
+            BtNuevo.TabIndex = 8;
+            BtNuevo.Text = "Nuevo Operadores";
+            BtNuevo.UseVisualStyleBackColor = false;
+            BtNuevo.Click += BtNuevo_Click;
+            // 
             // FrmInicio
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkTurquoise;
-            ClientSize = new Size(811, 542);
+            ClientSize = new Size(815, 677);
+            Controls.Add(BtNuevo);
             Controls.Add(BtLimpiar);
             Controls.Add(label2);
             Controls.Add(BtSalir);
@@ -167,5 +183,6 @@
         private Button BtSalir;
         private Label label2;
         private Button BtLimpiar;
+        private Button BtNuevo;
     }
 }
