@@ -46,7 +46,7 @@
             BtCalcular.Cursor = Cursors.Hand;
             BtCalcular.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             BtCalcular.ForeColor = Color.White;
-            BtCalcular.Location = new Point(583, 201);
+            BtCalcular.Location = new Point(517, 118);
             BtCalcular.Name = "BtCalcular";
             BtCalcular.Size = new Size(160, 56);
             BtCalcular.TabIndex = 0;
@@ -57,7 +57,7 @@
             // Txoper1
             // 
             Txoper1.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            Txoper1.Location = new Point(65, 236);
+            Txoper1.Location = new Point(76, 125);
             Txoper1.Name = "Txoper1";
             Txoper1.Size = new Size(125, 43);
             Txoper1.TabIndex = 1;
@@ -65,7 +65,7 @@
             // Txoper2
             // 
             Txoper2.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            Txoper2.Location = new Point(369, 236);
+            Txoper2.Location = new Point(339, 125);
             Txoper2.Name = "Txoper2";
             Txoper2.Size = new Size(125, 43);
             Txoper2.TabIndex = 2;
@@ -74,7 +74,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(259, 236);
+            label1.Location = new Point(256, 127);
             label1.Name = "label1";
             label1.Size = new Size(39, 41);
             label1.TabIndex = 3;
@@ -85,7 +85,7 @@
             // 
             LblResultado.AutoSize = true;
             LblResultado.Font = new Font("Segoe UI Variable Text", 23F, FontStyle.Bold, GraphicsUnit.Point);
-            LblResultado.Location = new Point(169, 343);
+            LblResultado.Location = new Point(170, 230);
             LblResultado.Name = "LblResultado";
             LblResultado.Size = new Size(203, 52);
             LblResultado.TabIndex = 4;
@@ -100,9 +100,9 @@
             BtSalir.FlatAppearance.BorderSize = 5;
             BtSalir.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             BtSalir.ForeColor = Color.Ivory;
-            BtSalir.Location = new Point(65, 442);
+            BtSalir.Location = new Point(718, 336);
             BtSalir.Name = "BtSalir";
-            BtSalir.Size = new Size(429, 71);
+            BtSalir.Size = new Size(144, 71);
             BtSalir.TabIndex = 5;
             BtSalir.Text = "Salir";
             BtSalir.UseVisualStyleBackColor = false;
@@ -126,7 +126,7 @@
             BtLimpiar.Cursor = Cursors.Hand;
             BtLimpiar.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             BtLimpiar.ForeColor = Color.White;
-            BtLimpiar.Location = new Point(583, 263);
+            BtLimpiar.Location = new Point(692, 118);
             BtLimpiar.Name = "BtLimpiar";
             BtLimpiar.Size = new Size(160, 56);
             BtLimpiar.TabIndex = 7;
@@ -140,9 +140,9 @@
             BtNuevo.Cursor = Cursors.Hand;
             BtNuevo.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             BtNuevo.ForeColor = Color.White;
-            BtNuevo.Location = new Point(65, 555);
+            BtNuevo.Location = new Point(76, 336);
             BtNuevo.Name = "BtNuevo";
-            BtNuevo.Size = new Size(429, 56);
+            BtNuevo.Size = new Size(388, 56);
             BtNuevo.TabIndex = 8;
             BtNuevo.Text = "Nuevo Operadores";
             BtNuevo.UseVisualStyleBackColor = false;
@@ -153,7 +153,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkTurquoise;
-            ClientSize = new Size(815, 677);
+            ClientSize = new Size(929, 447);
             Controls.Add(BtNuevo);
             Controls.Add(BtLimpiar);
             Controls.Add(label2);

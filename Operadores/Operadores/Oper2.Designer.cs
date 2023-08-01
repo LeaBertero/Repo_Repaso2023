@@ -35,6 +35,8 @@
             TxCalc1 = new TextBox();
             label1 = new Label();
             LbRes = new Label();
+            LblContador = new Button();
+            Lblincremento = new Label();
             SuspendLayout();
             // 
             // BtSalir
@@ -109,6 +111,29 @@
             LbRes.TextAlign = ContentAlignment.MiddleCenter;
             LbRes.Visible = false;
             // 
+            // LblContador
+            // 
+            LblContador.Location = new Point(78, 401);
+            LblContador.Name = "LblContador";
+            LblContador.Size = new Size(112, 58);
+            LblContador.TabIndex = 13;
+            LblContador.Text = "Contador";
+            LblContador.UseVisualStyleBackColor = true;
+            LblContador.Click += LblContador_Click;
+            // 
+            // Lblincremento
+            // 
+            Lblincremento.AutoSize = true;
+            Lblincremento.Font = new Font("Segoe UI", 30F, FontStyle.Bold, GraphicsUnit.Point);
+            Lblincremento.ForeColor = Color.White;
+            Lblincremento.Location = new Point(272, 392);
+            Lblincremento.Name = "Lblincremento";
+            Lblincremento.Size = new Size(299, 67);
+            Lblincremento.TabIndex = 14;
+            Lblincremento.Text = "Incremento";
+            Lblincremento.TextAlign = ContentAlignment.MiddleCenter;
+            Lblincremento.Visible = false;
+            // 
             // Oper2
             // 
             AcceptButton = BtCalcular;
@@ -116,6 +141,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.YellowGreen;
             ClientSize = new Size(1007, 538);
+            Controls.Add(Lblincremento);
+            Controls.Add(LblContador);
             Controls.Add(LbRes);
             Controls.Add(label1);
             Controls.Add(TxCalc1);
@@ -140,5 +167,7 @@
         private TextBox TxCalc1;
         private Label label1;
         private Label LbRes;
+        private Button LblContador;
+        private Label Lblincremento;
     }
 }

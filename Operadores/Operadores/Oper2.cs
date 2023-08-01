@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+        
 namespace Operadores
 {
     public partial class Oper2 : Form
@@ -15,6 +15,8 @@ namespace Operadores
         //decimal num1;
         //decimal num2;
         //decimal resultado;
+        
+        int incremento = 0;
 
         public Oper2()
         {
@@ -45,6 +47,18 @@ namespace Operadores
                 MessageBox.Show("Debe ingresar dos valores para realizar la operación");
             }
 
+        }
+
+        private void LblContador_Click(object sender, EventArgs e)
+        {
+
+            Lblincremento.Text = System.Convert.ToString(incremento);
+
+            //++incremento;  //funciona
+
+            incremento = incremento + 1; //funciona
+
+            Lblincremento.Visible = true;
         }
     }
 }
