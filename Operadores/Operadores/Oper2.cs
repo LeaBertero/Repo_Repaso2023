@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-        
+
 namespace Operadores
 {
     public partial class Oper2 : Form
@@ -15,7 +15,7 @@ namespace Operadores
         //decimal num1;
         //decimal num2;
         //decimal resultado;
-        
+
         int incremento = 0;
 
         public Oper2()
@@ -59,6 +59,18 @@ namespace Operadores
             incremento = incremento + 1; //funciona
 
             Lblincremento.Visible = true;
+        }
+
+        private void BtLimpiar_Click(object sender, EventArgs e)
+        {
+            TxCalc1.Text = null;
+            TxCalc2.Text = null;
+            LbRes.Text = null;
+        }
+
+        private void Btborrar_Click(object sender, EventArgs e)
+        {
+            Lblincremento.Text = null;
         }
     }
 }

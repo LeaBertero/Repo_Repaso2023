@@ -43,5 +43,11 @@ namespace Operadores
             var segundoform = new Oper2();
             segundoform.ShowDialog();
         }
+
+        private void BtPrueba_Click(object sender, EventArgs e)
+        {
+            var formPrueba = new FormPrueba();
+            formPrueba.Show();
+        }
     }
 }

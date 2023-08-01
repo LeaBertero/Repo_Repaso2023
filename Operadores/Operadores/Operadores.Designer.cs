@@ -38,6 +38,7 @@
             label2 = new Label();
             BtLimpiar = new Button();
             BtNuevo = new Button();
+            BtPrueba = new Button();
             SuspendLayout();
             // 
             // BtCalcular
@@ -148,12 +149,27 @@
             BtNuevo.UseVisualStyleBackColor = false;
             BtNuevo.Click += BtNuevo_Click;
             // 
+            // BtPrueba
+            // 
+            BtPrueba.BackColor = Color.SteelBlue;
+            BtPrueba.Cursor = Cursors.Hand;
+            BtPrueba.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            BtPrueba.ForeColor = Color.White;
+            BtPrueba.Location = new Point(76, 452);
+            BtPrueba.Name = "BtPrueba";
+            BtPrueba.Size = new Size(388, 56);
+            BtPrueba.TabIndex = 9;
+            BtPrueba.Text = "Ir a formulario de prueba";
+            BtPrueba.UseVisualStyleBackColor = false;
+            BtPrueba.Click += BtPrueba_Click;
+            // 
             // FrmInicio
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkTurquoise;
-            ClientSize = new Size(929, 447);
+            ClientSize = new Size(908, 673);
+            Controls.Add(BtPrueba);
             Controls.Add(BtNuevo);
             Controls.Add(BtLimpiar);
             Controls.Add(label2);
@@ -184,5 +200,6 @@
         private Label label2;
         private Button BtLimpiar;
         private Button BtNuevo;
+        private Button BtPrueba;
     }
 }

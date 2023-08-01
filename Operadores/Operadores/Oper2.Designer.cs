@@ -37,6 +37,8 @@
             LbRes = new Label();
             LblContador = new Button();
             Lblincremento = new Label();
+            BtLimpiar = new Button();
+            Btborrar = new Button();
             SuspendLayout();
             // 
             // BtSalir
@@ -64,7 +66,7 @@
             // 
             // BtCalcular
             // 
-            BtCalcular.Location = new Point(685, 154);
+            BtCalcular.Location = new Point(672, 152);
             BtCalcular.Name = "BtCalcular";
             BtCalcular.Size = new Size(94, 29);
             BtCalcular.TabIndex = 8;
@@ -134,6 +136,26 @@
             Lblincremento.TextAlign = ContentAlignment.MiddleCenter;
             Lblincremento.Visible = false;
             // 
+            // BtLimpiar
+            // 
+            BtLimpiar.Location = new Point(672, 187);
+            BtLimpiar.Name = "BtLimpiar";
+            BtLimpiar.Size = new Size(94, 29);
+            BtLimpiar.TabIndex = 15;
+            BtLimpiar.Text = "Limpiar";
+            BtLimpiar.UseVisualStyleBackColor = true;
+            BtLimpiar.Click += BtLimpiar_Click;
+            // 
+            // Btborrar
+            // 
+            Btborrar.Location = new Point(220, 481);
+            Btborrar.Name = "Btborrar";
+            Btborrar.Size = new Size(430, 45);
+            Btborrar.TabIndex = 16;
+            Btborrar.Text = "Borrar";
+            Btborrar.UseVisualStyleBackColor = true;
+            Btborrar.Click += Btborrar_Click;
+            // 
             // Oper2
             // 
             AcceptButton = BtCalcular;
@@ -141,6 +163,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.YellowGreen;
             ClientSize = new Size(1007, 538);
+            Controls.Add(Btborrar);
+            Controls.Add(BtLimpiar);
             Controls.Add(Lblincremento);
             Controls.Add(LblContador);
             Controls.Add(LbRes);
@@ -169,5 +193,7 @@
         private Label LbRes;
         private Button LblContador;
         private Label Lblincremento;
+        private Button BtLimpiar;
+        private Button Btborrar;
     }
 }
