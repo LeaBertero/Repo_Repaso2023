@@ -43,7 +43,7 @@
             // BtCalcular
             // 
             BtCalcular.Cursor = Cursors.Hand;
-            BtCalcular.Location = new Point(416, 159);
+            BtCalcular.Location = new Point(336, 66);
             BtCalcular.Name = "BtCalcular";
             BtCalcular.Size = new Size(94, 29);
             BtCalcular.TabIndex = 4;
@@ -55,7 +55,7 @@
             // 
             LblResultado.AutoSize = true;
             LblResultado.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            LblResultado.Location = new Point(384, 303);
+            LblResultado.Location = new Point(154, 303);
             LblResultado.Name = "LblResultado";
             LblResultado.Size = new Size(158, 41);
             LblResultado.TabIndex = 6;
@@ -112,14 +112,15 @@
             // 
             // BtCerrar
             // 
+            BtCerrar.BackColor = SystemColors.ActiveCaption;
             BtCerrar.Cursor = Cursors.Hand;
-            BtCerrar.Location = new Point(684, 22);
+            BtCerrar.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            BtCerrar.Location = new Point(655, 12);
             BtCerrar.Name = "BtCerrar";
-            BtCerrar.Size = new Size(94, 29);
+            BtCerrar.Size = new Size(133, 51);
             BtCerrar.TabIndex = 5;
             BtCerrar.Text = "Cerrar";
-            BtCerrar.TextAlign = ContentAlignment.TopCenter;
-            BtCerrar.UseVisualStyleBackColor = true;
+            BtCerrar.UseVisualStyleBackColor = false;
             BtCerrar.Click += BtCerrar_Click;
             // 
             // BtLimpiar
@@ -127,7 +128,7 @@
             BtLimpiar.BackColor = Color.MediumTurquoise;
             BtLimpiar.Cursor = Cursors.Hand;
             BtLimpiar.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            BtLimpiar.Location = new Point(416, 204);
+            BtLimpiar.Location = new Point(336, 139);
             BtLimpiar.Name = "BtLimpiar";
             BtLimpiar.Size = new Size(94, 58);
             BtLimpiar.TabIndex = 9;
@@ -140,7 +141,7 @@
             AcceptButton = BtCalcular;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 353);
+            ClientSize = new Size(800, 367);
             ControlBox = false;
             Controls.Add(BtLimpiar);
             Controls.Add(BtCerrar);

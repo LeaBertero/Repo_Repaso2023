@@ -2,6 +2,7 @@ namespace Condicionales
 {
     public partial class Condicionales : Form
     {
+        //constructor
         public Condicionales()
         {
             InitializeComponent();
