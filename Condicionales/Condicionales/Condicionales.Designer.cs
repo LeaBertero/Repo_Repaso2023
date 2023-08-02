@@ -55,7 +55,7 @@
             // 
             LblResultado.AutoSize = true;
             LblResultado.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            LblResultado.Location = new Point(154, 303);
+            LblResultado.Location = new Point(152, 317);
             LblResultado.Name = "LblResultado";
             LblResultado.Size = new Size(158, 41);
             LblResultado.TabIndex = 6;
@@ -65,27 +65,30 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label3.Location = new Point(152, 31);
             label3.Name = "label3";
-            label3.Size = new Size(75, 20);
+            label3.Size = new Size(107, 28);
             label3.TabIndex = 6;
             label3.Text = "Numero 1";
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label2.Location = new Point(154, 122);
             label2.Name = "label2";
-            label2.Size = new Size(73, 20);
+            label2.Size = new Size(101, 28);
             label2.TabIndex = 7;
             label2.Text = "Operador";
             // 
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label4.Location = new Point(152, 213);
             label4.Name = "label4";
-            label4.Size = new Size(75, 20);
+            label4.Size = new Size(107, 28);
             label4.TabIndex = 8;
             label4.Text = "Numero 2";
             // 
@@ -141,6 +144,7 @@
             AcceptButton = BtCalcular;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Orange;
             ClientSize = new Size(800, 367);
             ControlBox = false;
             Controls.Add(BtLimpiar);
@@ -156,6 +160,7 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Condicionales";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Condicionales";
             ResumeLayout(false);
             PerformLayout();
