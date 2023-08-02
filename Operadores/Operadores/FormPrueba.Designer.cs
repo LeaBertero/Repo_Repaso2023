@@ -36,9 +36,9 @@
             // BtComenzar
             // 
             BtComenzar.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            BtComenzar.Location = new Point(257, 213);
+            BtComenzar.Location = new Point(273, 231);
             BtComenzar.Name = "BtComenzar";
-            BtComenzar.Size = new Size(208, 112);
+            BtComenzar.Size = new Size(167, 76);
             BtComenzar.TabIndex = 0;
             BtComenzar.Text = "Comenzar";
             BtComenzar.UseVisualStyleBackColor = true;
@@ -48,11 +48,11 @@
             // 
             LblContar.AutoSize = true;
             LblContar.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            LblContar.Location = new Point(611, 259);
+            LblContar.Location = new Point(650, 252);
             LblContar.Name = "LblContar";
-            LblContar.Size = new Size(96, 37);
+            LblContar.Size = new Size(134, 37);
             LblContar.TabIndex = 1;
-            LblContar.Text = "label1";
+            LblContar.Text = "contador";
             // 
             // BtSalir
             // 
