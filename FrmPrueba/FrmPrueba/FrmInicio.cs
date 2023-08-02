@@ -16,6 +16,7 @@ namespace FrmPrueba
         int operador1;
         int operador2;
         int resultado;
+
         public FrmInicio()
         {
             InitializeComponent();
