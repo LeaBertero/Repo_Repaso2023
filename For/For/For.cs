@@ -16,7 +16,7 @@ namespace For
             int x = Convert.ToInt32(TxValorIni.Text); //variable declarada afuera de la estructura de for
 
 
-            for (int velocidad = x; velocidad < 900; velocidad++)
+            for (int velocidad = x; velocidad < 1000; velocidad++)
             {
                 Lbdesplazar.Left = velocidad;
 
@@ -30,6 +30,23 @@ namespace For
         private void BtCerrar_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void BtComenzar_2_Click(object sender, EventArgs e)
+        {
+            LblMover2.Visible = true;
+
+            int left = Convert.ToInt32(TxLeft.Text);
+
+            for (int avanceIzquierdo = left; avanceIzquierdo < 1200; avanceIzquierdo++)
+            {
+                LblMover2.Left = left;
+
+                this.Refresh();
+            }
+
+
+
         }
     }
 }
