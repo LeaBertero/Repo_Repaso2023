@@ -32,6 +32,8 @@
             BtIniciar = new Button();
             picArg = new PictureBox();
             picFra = new PictureBox();
+            BtAcomodar = new Button();
+            BtSalir = new Button();
             ((System.ComponentModel.ISupportInitialize)picArg).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picFra).BeginInit();
             SuspendLayout();
@@ -42,40 +44,73 @@
             BtIniciar.Cursor = Cursors.Hand;
             BtIniciar.Font = new Font("Segoe UI", 32F, FontStyle.Bold, GraphicsUnit.Point);
             BtIniciar.ForeColor = SystemColors.ButtonFace;
-            BtIniciar.Location = new Point(584, 12);
+            BtIniciar.Location = new Point(601, 12);
             BtIniciar.Name = "BtIniciar";
             BtIniciar.Size = new Size(298, 176);
             BtIniciar.TabIndex = 0;
             BtIniciar.Text = "Iniciar";
             BtIniciar.TextAlign = ContentAlignment.BottomCenter;
             BtIniciar.UseVisualStyleBackColor = true;
+            BtIniciar.Click += BtIniciar_Click;
             // 
             // picArg
             // 
             picArg.Image = (Image)resources.GetObject("picArg.Image");
-            picArg.Location = new Point(24, 234);
+            picArg.Location = new Point(12, 176);
             picArg.Name = "picArg";
-            picArg.Size = new Size(286, 178);
+            picArg.Size = new Size(267, 173);
             picArg.TabIndex = 1;
             picArg.TabStop = false;
+            picArg.Visible = false;
             // 
             // picFra
             // 
             picFra.Image = Properties.Resources.france;
-            picFra.Location = new Point(1157, 234);
+            picFra.Location = new Point(1177, 401);
             picFra.Name = "picFra";
-            picFra.Size = new Size(276, 178);
+            picFra.Size = new Size(267, 178);
             picFra.TabIndex = 2;
             picFra.TabStop = false;
+            picFra.Visible = false;
+            // 
+            // BtAcomodar
+            // 
+            BtAcomodar.BackColor = Color.DarkRed;
+            BtAcomodar.Cursor = Cursors.Hand;
+            BtAcomodar.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            BtAcomodar.ForeColor = SystemColors.ButtonFace;
+            BtAcomodar.Location = new Point(601, 633);
+            BtAcomodar.Name = "BtAcomodar";
+            BtAcomodar.Size = new Size(298, 64);
+            BtAcomodar.TabIndex = 3;
+            BtAcomodar.Text = "Acomodar";
+            BtAcomodar.UseVisualStyleBackColor = false;
+            BtAcomodar.Click += BtAcomodar_Click;
+            // 
+            // BtSalir
+            // 
+            BtSalir.BackColor = SystemColors.ActiveCaption;
+            BtSalir.Cursor = Cursors.Hand;
+            BtSalir.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            BtSalir.ForeColor = SystemColors.ControlLightLight;
+            BtSalir.Location = new Point(1313, 648);
+            BtSalir.Name = "BtSalir";
+            BtSalir.Size = new Size(131, 49);
+            BtSalir.TabIndex = 4;
+            BtSalir.Text = "Salir";
+            BtSalir.UseVisualStyleBackColor = false;
+            BtSalir.Click += BtSalir_Click;
             // 
             // While
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1456, 495);
+            ClientSize = new Size(1456, 709);
             Controls.Add(picFra);
             Controls.Add(picArg);
+            Controls.Add(BtSalir);
+            Controls.Add(BtAcomodar);
             Controls.Add(BtIniciar);
             Name = "While";
             StartPosition = FormStartPosition.CenterScreen;
@@ -90,5 +125,7 @@
         private Button BtIniciar;
         private PictureBox picArg;
         private PictureBox picFra;
+        private Button BtAcomodar;
+        private Button BtSalir;
     }
 }

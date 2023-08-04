@@ -17,6 +17,31 @@ namespace While
             InitializeComponent();
         }
 
+        private void BtIniciar_Click(object sender, EventArgs e)
+        {
+            while (true)
+            {
+                picArg.Left = picArg.Left + 1;
+                picFra.Left = picFra.Left - 1;
 
+                this.Refresh();
+
+            }
+        }
+
+        private void BtSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void BtAcomodar_Click(object sender, EventArgs e)
+        {
+            picArg.Visible = true;
+            picFra.Visible = true;
+
+            picArg.Top = 190;
+            picFra.Top = 370;
+
+        }
     }
 }
