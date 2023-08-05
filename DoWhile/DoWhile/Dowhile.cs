@@ -16,5 +16,10 @@ namespace DoWhile
         {
             InitializeComponent();
         }
+
+        private void Btsalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
