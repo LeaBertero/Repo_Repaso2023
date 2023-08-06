@@ -28,13 +28,13 @@ namespace While
 
                 if ((picArg.Left + picArg.Width) == picFra.Left)
                 {
-
-                    MessageBox.Show("ARGENTINA CAMPEÓN DEL MUNDO 2023");
+                    LblMensaje.Visible = true;
+                    //MessageBox.Show("ARGENTINA CAMPEÓN DEL MUNDO 2023");
                     break;
 
                 }
 
-               
+
             }
         }
 

@@ -34,6 +34,7 @@
             picFra = new PictureBox();
             BtAcomodar = new Button();
             BtSalir = new Button();
+            LblMensaje = new Label();
             ((System.ComponentModel.ISupportInitialize)picArg).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picFra).BeginInit();
             SuspendLayout();
@@ -101,12 +102,26 @@
             BtSalir.UseVisualStyleBackColor = false;
             BtSalir.Click += BtSalir_Click;
             // 
+            // LblMensaje
+            // 
+            LblMensaje.BackColor = Color.DeepSkyBlue;
+            LblMensaje.Font = new Font("Segoe UI", 48F, FontStyle.Regular, GraphicsUnit.Point);
+            LblMensaje.ForeColor = Color.White;
+            LblMensaje.Location = new Point(12, 446);
+            LblMensaje.Name = "LblMensaje";
+            LblMensaje.Size = new Size(1462, 114);
+            LblMensaje.TabIndex = 5;
+            LblMensaje.Text = "Argentina Campeón del Mundo 2023 !!!!";
+            LblMensaje.TextAlign = ContentAlignment.MiddleCenter;
+            LblMensaje.Visible = false;
+            // 
             // While
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1486, 709);
+            Controls.Add(LblMensaje);
             Controls.Add(picArg);
             Controls.Add(picFra);
             Controls.Add(BtSalir);
@@ -127,5 +142,6 @@
         private PictureBox picFra;
         private Button BtAcomodar;
         private Button BtSalir;
+        private Label LblMensaje;
     }
 }
