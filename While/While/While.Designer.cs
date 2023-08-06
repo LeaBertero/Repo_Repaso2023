@@ -57,7 +57,7 @@
             // picArg
             // 
             picArg.Image = (Image)resources.GetObject("picArg.Image");
-            picArg.Location = new Point(12, 227);
+            picArg.Location = new Point(12, 248);
             picArg.Name = "picArg";
             picArg.Size = new Size(267, 173);
             picArg.TabIndex = 1;
@@ -67,7 +67,7 @@
             // picFra
             // 
             picFra.Image = Properties.Resources.france;
-            picFra.Location = new Point(1207, 227);
+            picFra.Location = new Point(1207, 248);
             picFra.Name = "picFra";
             picFra.Size = new Size(267, 173);
             picFra.TabIndex = 2;

@@ -17,7 +17,7 @@ namespace While
             InitializeComponent();
         }
 
-        private void BtIniciar_Click(object sender, EventArgs e)
+        private void BtIniciar_Click(object sender, EventArgs e) //evento click - (BtIniciar_Click)
         {
             while (true)
             {
@@ -47,8 +47,12 @@ namespace While
             picArg.Top = 190;
             picFra.Top = 190;
 
+
+
             //370 es el numero para la bandera de francia
         }
+
+
     }
 }
 
