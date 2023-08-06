@@ -31,12 +31,12 @@ namespace While
                     LblMensaje.Visible = true;
                     //MessageBox.Show("ARGENTINA CAMPEÓN DEL MUNDO 2023");
                     break;
-
                 }
-
-
             }
         }
+
+
+
 
         private void BtSalir_Click(object sender, EventArgs e)
         {
@@ -54,6 +54,6 @@ namespace While
             //370 es el numero para la bandera de francia
         }
 
-
     }
 }
+
