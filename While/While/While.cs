@@ -34,10 +34,6 @@ namespace While
                 }
             }
         }
-
-
-
-
         private void BtSalir_Click(object sender, EventArgs e)
         {
             Close();
@@ -53,7 +49,9 @@ namespace While
 
             //370 es el numero para la bandera de francia
         }
-
     }
 }
+
+
+
 
