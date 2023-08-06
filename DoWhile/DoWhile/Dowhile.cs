@@ -22,34 +22,31 @@ namespace DoWhile
             Close();
         }
 
-        //temporalmente desactivado
-        private void Comenzar_Click(object sender, EventArgs e)
-        {
-            while ((blue.Left - blue.Width) == red.Left)
-            {
-                red.Left = red.Left - 1;
-                blue.Left = blue.Left + 1;
-
-                this.Refresh();
-                //break;
-            }
-
-        }
-
         private void BtMover_Click(object sender, EventArgs e)
         {
-
-            while ((rojo.Left + rojo.Width) == azul.Left)
+            do
             {
+                //variables inicializadas y con un valor de + 1 , para wue vayan contando de a uno
                 rojo.Left = rojo.Left + 1;
                 azul.Left = azul.Left - 1;
 
-
                 this.Refresh();
-                break;
-            }
+                //break;
 
+                //MessageBox.Show("Choque frontal");
+
+            } while ((rojo.Left + rojo.Width) != azul.Left);
         }
+
 
     }
 }
+
+
+
+
+
+
+
+
+
