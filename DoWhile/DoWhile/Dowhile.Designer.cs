@@ -49,9 +49,9 @@
             // Btsalir
             // 
             Btsalir.Cursor = Cursors.Hand;
-            Btsalir.Location = new Point(911, 12);
+            Btsalir.Location = new Point(390, 472);
             Btsalir.Name = "Btsalir";
-            Btsalir.Size = new Size(160, 61);
+            Btsalir.Size = new Size(265, 61);
             Btsalir.TabIndex = 1;
             Btsalir.Text = "Salir";
             Btsalir.UseVisualStyleBackColor = true;
