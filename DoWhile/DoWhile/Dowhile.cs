@@ -21,5 +21,12 @@ namespace DoWhile
         {
             Close();
         }
+
+        private void BtMover_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

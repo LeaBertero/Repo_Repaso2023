@@ -36,17 +36,19 @@
             // 
             // BtMover
             // 
-            BtMover.Location = new Point(252, 12);
+            BtMover.BackColor = Color.Gold;
+            BtMover.Location = new Point(12, 12);
             BtMover.Name = "BtMover";
             BtMover.Size = new Size(265, 61);
             BtMover.TabIndex = 0;
             BtMover.Text = "MOver";
-            BtMover.UseVisualStyleBackColor = true;
+            BtMover.UseVisualStyleBackColor = false;
+            BtMover.Click += BtMover_Click;
             // 
             // Btsalir
             // 
             Btsalir.Cursor = Cursors.Hand;
-            Btsalir.Location = new Point(628, 368);
+            Btsalir.Location = new Point(911, 472);
             Btsalir.Name = "Btsalir";
             Btsalir.Size = new Size(160, 61);
             Btsalir.TabIndex = 1;
@@ -57,7 +59,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(159, 162);
+            label1.Location = new Point(63, 143);
             label1.Name = "label1";
             label1.Size = new Size(50, 20);
             label1.TabIndex = 2;
@@ -66,7 +68,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(628, 162);
+            label2.Location = new Point(63, 212);
             label2.Name = "label2";
             label2.Size = new Size(50, 20);
             label2.TabIndex = 3;
@@ -76,7 +78,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.Cornsilk;
+            ClientSize = new Size(1083, 545);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(Btsalir);
