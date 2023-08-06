@@ -30,18 +30,22 @@
         {
             BtMover = new Button();
             Btsalir = new Button();
-            label1 = new Label();
-            label2 = new Label();
+            azul = new Label();
+            rojo = new Label();
+            red = new Label();
+            blue = new Label();
+            Comenzar = new Button();
             SuspendLayout();
             // 
             // BtMover
             // 
             BtMover.BackColor = Color.Gold;
-            BtMover.Location = new Point(12, 12);
+            BtMover.Cursor = Cursors.Hand;
+            BtMover.Location = new Point(413, 472);
             BtMover.Name = "BtMover";
             BtMover.Size = new Size(265, 61);
             BtMover.TabIndex = 0;
-            BtMover.Text = "MOver";
+            BtMover.Text = "Mover";
             BtMover.UseVisualStyleBackColor = false;
             BtMover.Click += BtMover_Click;
             // 
@@ -56,23 +60,56 @@
             Btsalir.UseVisualStyleBackColor = true;
             Btsalir.Click += Btsalir_Click;
             // 
-            // label1
+            // azul
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(63, 143);
-            label1.Name = "label1";
-            label1.Size = new Size(50, 20);
-            label1.TabIndex = 2;
-            label1.Text = "label1";
+            azul.BackColor = Color.Blue;
+            azul.Location = new Point(1003, 354);
+            azul.Name = "azul";
+            azul.Size = new Size(68, 60);
+            azul.TabIndex = 2;
+            azul.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // rojo
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(63, 212);
-            label2.Name = "label2";
-            label2.Size = new Size(50, 20);
-            label2.TabIndex = 3;
-            label2.Text = "label2";
+            rojo.BackColor = Color.Red;
+            rojo.Location = new Point(12, 354);
+            rojo.Name = "rojo";
+            rojo.Size = new Size(68, 60);
+            rojo.TabIndex = 3;
+            rojo.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // red
+            // 
+            red.BackColor = Color.Red;
+            red.Enabled = false;
+            red.Location = new Point(124, 107);
+            red.Name = "red";
+            red.Size = new Size(68, 60);
+            red.TabIndex = 6;
+            red.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // blue
+            // 
+            blue.BackColor = Color.Blue;
+            blue.Enabled = false;
+            blue.Location = new Point(954, 107);
+            blue.Name = "blue";
+            blue.Size = new Size(68, 60);
+            blue.TabIndex = 5;
+            blue.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // Comenzar
+            // 
+            Comenzar.BackColor = Color.Gold;
+            Comenzar.Cursor = Cursors.Hand;
+            Comenzar.Enabled = false;
+            Comenzar.Location = new Point(413, 12);
+            Comenzar.Name = "Comenzar";
+            Comenzar.Size = new Size(265, 61);
+            Comenzar.TabIndex = 4;
+            Comenzar.Text = "Comenzar";
+            Comenzar.UseVisualStyleBackColor = false;
+            Comenzar.Click += Comenzar_Click;
             // 
             // Dowhile
             // 
@@ -80,22 +117,27 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Cornsilk;
             ClientSize = new Size(1083, 545);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(red);
+            Controls.Add(blue);
+            Controls.Add(Comenzar);
+            Controls.Add(rojo);
+            Controls.Add(azul);
             Controls.Add(Btsalir);
             Controls.Add(BtMover);
             Name = "Dowhile";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Dowhile";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
         private Button BtMover;
         private Button Btsalir;
-        private Label label1;
-        private Label label2;
+        private Label azul;
+        private Label rojo;
+        private Label red;
+        private Label blue;
+        private Button Comenzar;
     }
 }

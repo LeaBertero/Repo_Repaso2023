@@ -22,11 +22,34 @@ namespace DoWhile
             Close();
         }
 
-        private void BtMover_Click(object sender, EventArgs e)
+        //temporalmente desactivado
+        private void Comenzar_Click(object sender, EventArgs e)
         {
+            while ((blue.Left - blue.Width) == red.Left)
+            {
+                red.Left = red.Left - 1;
+                blue.Left = blue.Left + 1;
+
+                this.Refresh();
+                //break;
+            }
 
         }
 
+        private void BtMover_Click(object sender, EventArgs e)
+        {
+
+            while ((rojo.Left + rojo.Width) == azul.Left)
+            {
+                rojo.Left = rojo.Left + 1;
+                azul.Left = azul.Left - 1;
+
+
+                this.Refresh();
+                break;
+            }
+
+        }
 
     }
 }
