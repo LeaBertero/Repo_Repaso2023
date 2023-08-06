@@ -56,7 +56,7 @@
             // picArg
             // 
             picArg.Image = (Image)resources.GetObject("picArg.Image");
-            picArg.Location = new Point(12, 176);
+            picArg.Location = new Point(12, 227);
             picArg.Name = "picArg";
             picArg.Size = new Size(267, 173);
             picArg.TabIndex = 1;
@@ -66,9 +66,9 @@
             // picFra
             // 
             picFra.Image = Properties.Resources.france;
-            picFra.Location = new Point(1177, 401);
+            picFra.Location = new Point(1207, 227);
             picFra.Name = "picFra";
-            picFra.Size = new Size(267, 178);
+            picFra.Size = new Size(267, 173);
             picFra.TabIndex = 2;
             picFra.TabStop = false;
             picFra.Visible = false;
@@ -106,9 +106,9 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1456, 709);
-            Controls.Add(picFra);
+            ClientSize = new Size(1486, 709);
             Controls.Add(picArg);
+            Controls.Add(picFra);
             Controls.Add(BtSalir);
             Controls.Add(BtAcomodar);
             Controls.Add(BtIniciar);

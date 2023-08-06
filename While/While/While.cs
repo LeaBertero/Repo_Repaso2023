@@ -26,6 +26,15 @@ namespace While
 
                 this.Refresh();
 
+                if ((picArg.Left + picArg.Width) == picFra.Left)
+                {
+
+                    MessageBox.Show("ARGENTINA CAMPEÓN DEL MUNDO 2023");
+                    break;
+
+                }
+
+               
             }
         }
 
@@ -40,8 +49,11 @@ namespace While
             picFra.Visible = true;
 
             picArg.Top = 190;
-            picFra.Top = 370;
+            picFra.Top = 190;
 
+            //370 es el numero para la bandera de francia
         }
+
+
     }
 }
