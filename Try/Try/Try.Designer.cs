@@ -110,6 +110,7 @@
             button1.TabIndex = 6;
             button1.Text = "Ejercicio de TryCatch";
             button1.UseVisualStyleBackColor = false;
+            
             // 
             // BtSalir
             // 
