@@ -16,5 +16,32 @@ namespace Try
         {
             InitializeComponent();
         }
+
+        private void BtCalcular_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                LbRes.Text = (Convert.ToDecimal(Txnum1.Text) /
+                Convert.ToDecimal(TxNum2.Text)).ToString();
+
+                LbRes.Visible = true;
+
+
+            }
+            catch (Exception)
+            {
+
+                //MessageBox.Show("Dato ingresado es invalido");
+
+                LbMensaje.Text = "Dato ingresado es invalido";
+            }
+        }
+
+        private void BtSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+
     }
 }
