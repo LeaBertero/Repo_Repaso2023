@@ -26,16 +26,18 @@ namespace Try
 
                 LbRes.Visible = true;
 
-
             }
             catch (Exception)
             {
 
-                //MessageBox.Show("Dato ingresado es invalido");
+                MessageBox.Show("Dato ingresado es invalido");
 
-                LbMensaje.Text = "Dato ingresado es invalido";
+
+                //LbMensaje.Visible = true;
+                //LbMensaje.Text = "Dato ingresado es invalido";
             }
         }
+
 
         private void BtSalir_Click(object sender, EventArgs e)
         {
@@ -45,3 +47,11 @@ namespace Try
 
     }
 }
+
+
+
+
+
+
+
+

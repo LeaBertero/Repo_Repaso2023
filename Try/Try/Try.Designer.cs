@@ -115,11 +115,11 @@
             // 
             BtSalir.BackColor = Color.DeepSkyBlue;
             BtSalir.Cursor = Cursors.Hand;
-            BtSalir.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.Point);
+            BtSalir.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             BtSalir.ForeColor = Color.WhiteSmoke;
-            BtSalir.Location = new Point(951, 46);
+            BtSalir.Location = new Point(1142, 375);
             BtSalir.Name = "BtSalir";
-            BtSalir.Size = new Size(140, 59);
+            BtSalir.Size = new Size(137, 45);
             BtSalir.TabIndex = 7;
             BtSalir.Text = "Salir";
             BtSalir.UseVisualStyleBackColor = false;
@@ -130,7 +130,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.CornflowerBlue;
-            ClientSize = new Size(1103, 359);
+            ClientSize = new Size(1291, 432);
             Controls.Add(BtSalir);
             Controls.Add(button1);
             Controls.Add(label1);
