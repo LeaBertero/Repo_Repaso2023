@@ -27,14 +27,23 @@ namespace Try
                 LbRes.Visible = true;
 
             }
-            catch (Exception)
+            catch (Exception mensajeErr)
             {
+                //Forma 2:llamando a una ventana emergente , incluyendo un aviso de error
+                //MessageBox.Show("Dato ingresado es invalido");
 
-                MessageBox.Show("Dato ingresado es invalido");
 
+                //forma 3: a travez de una label directo poniendo en false y pasando luego a true en el codigo
 
                 //LbMensaje.Visible = true;
                 //LbMensaje.Text = "Dato ingresado es invalido";
+
+
+                // Forma 1: mensaje con variable de error a tra vez de un label
+                // (Mensaje adaptado al software desarrollador, en este caso por medio de un label).
+
+                LbMensaje.Text = mensajeErr.Message;
+                LbMensaje.Visible = true;
             }
         }
 
