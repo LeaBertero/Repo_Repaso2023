@@ -12,6 +12,12 @@ namespace Try
 {
     public partial class Try : Form
     {
+
+        //decimal suma;
+        //decimal resta;
+        //decimal mult;
+        //string div;
+
         public Try()
         {
             InitializeComponent();
@@ -21,8 +27,24 @@ namespace Try
         {
             try
             {
-                LbRes.Text = (Convert.ToDecimal(Txnum1.Text) /
-                Convert.ToDecimal(TxNum2.Text)).ToString();
+
+                LbRes.Text = (Convert.ToDecimal(TxDiv1.Text) /
+                Convert.ToDecimal(TxDiv2.Text)).ToString();
+
+                //if (Convert.ToString(TxOperDiv.Text) == "/")
+                //{
+
+                //}
+                //else
+                //{
+                //    MessageBox.Show("Imposible dividir");
+                //}
+
+
+                //LbRes.Text = (Convert.ToDecimal(TxMult1.Text) *
+                //Convert.ToDecimal(TxMult2.Text)).ToString();
+
+
 
                 LbRes.Visible = true;
 
@@ -53,7 +75,12 @@ namespace Try
             Close();
         }
 
-      
+        private void BtLimpiar_Click(object sender, EventArgs e)
+        {
+            TxDiv1.Text = null;
+            TxDiv2.Text = null;
+            LbRes.Text = null;
+        }
     }
 }
 
