@@ -40,6 +40,7 @@
             label2 = new Label();
             TxMult2 = new TextBox();
             TxMult1 = new TextBox();
+            btsiguiente = new Button();
             SuspendLayout();
             // 
             // TxDiv1
@@ -171,6 +172,20 @@
             TxMult1.Size = new Size(125, 43);
             TxMult1.TabIndex = 8;
             // 
+            // btsiguiente
+            // 
+            btsiguiente.BackColor = Color.DeepSkyBlue;
+            btsiguiente.Cursor = Cursors.Hand;
+            btsiguiente.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            btsiguiente.ForeColor = Color.WhiteSmoke;
+            btsiguiente.Location = new Point(939, 378);
+            btsiguiente.Name = "btsiguiente";
+            btsiguiente.Size = new Size(137, 45);
+            btsiguiente.TabIndex = 11;
+            btsiguiente.Text = "siguiente";
+            btsiguiente.UseVisualStyleBackColor = false;
+            btsiguiente.Click += btsiguiente_Click;
+            // 
             // Try
             // 
             AcceptButton = BtCalcular;
@@ -178,6 +193,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.CornflowerBlue;
             ClientSize = new Size(1088, 438);
+            Controls.Add(btsiguiente);
             Controls.Add(label2);
             Controls.Add(TxMult2);
             Controls.Add(TxMult1);
@@ -211,5 +227,6 @@
         private Label label2;
         private TextBox TxMult2;
         private TextBox TxMult1;
+        private Button btsiguiente;
     }
 }

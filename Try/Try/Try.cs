@@ -81,6 +81,12 @@ namespace Try
             TxDiv2.Text = null;
             LbRes.Text = null;
         }
+
+        private void btsiguiente_Click(object sender, EventArgs e)
+        {
+            var siguiente = new Try2();
+            siguiente.ShowDialog();
+        }
     }
 }
 
