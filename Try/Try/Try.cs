@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,7 @@ namespace Try
         //decimal resta;
         //decimal mult;
         //string div;
+        int contador;
 
         public Try()
         {
@@ -86,6 +88,14 @@ namespace Try
         {
             var siguiente = new Try2();
             siguiente.ShowDialog();
+        }
+
+        private void BtHora_Click(object sender, EventArgs e)
+        {
+            contador = contador + 1;
+            LbHora.Text = DateTime.Now.ToString();
+            //LbHora.Visible = true;
+
         }
     }
 }

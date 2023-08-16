@@ -41,6 +41,8 @@
             TxMult2 = new TextBox();
             TxMult1 = new TextBox();
             btsiguiente = new Button();
+            BtHora = new Button();
+            LbHora = new Label();
             SuspendLayout();
             // 
             // TxDiv1
@@ -124,7 +126,7 @@
             BtSalir.Cursor = Cursors.Hand;
             BtSalir.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             BtSalir.ForeColor = Color.WhiteSmoke;
-            BtSalir.Location = new Point(943, 12);
+            BtSalir.Location = new Point(1202, 12);
             BtSalir.Name = "BtSalir";
             BtSalir.Size = new Size(137, 45);
             BtSalir.TabIndex = 7;
@@ -178,7 +180,7 @@
             btsiguiente.Cursor = Cursors.Hand;
             btsiguiente.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             btsiguiente.ForeColor = Color.WhiteSmoke;
-            btsiguiente.Location = new Point(939, 378);
+            btsiguiente.Location = new Point(1202, 478);
             btsiguiente.Name = "btsiguiente";
             btsiguiente.Size = new Size(137, 45);
             btsiguiente.TabIndex = 11;
@@ -186,13 +188,40 @@
             btsiguiente.UseVisualStyleBackColor = false;
             btsiguiente.Click += btsiguiente_Click;
             // 
+            // BtHora
+            // 
+            BtHora.BackColor = Color.DeepSkyBlue;
+            BtHora.Cursor = Cursors.Hand;
+            BtHora.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            BtHora.ForeColor = Color.WhiteSmoke;
+            BtHora.Location = new Point(74, 451);
+            BtHora.Name = "BtHora";
+            BtHora.Size = new Size(137, 45);
+            BtHora.TabIndex = 12;
+            BtHora.Text = "Hora";
+            BtHora.UseVisualStyleBackColor = false;
+            BtHora.Click += BtHora_Click;
+            // 
+            // LbHora
+            // 
+            LbHora.AutoSize = true;
+            LbHora.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            LbHora.Location = new Point(311, 458);
+            LbHora.Name = "LbHora";
+            LbHora.Size = new Size(83, 32);
+            LbHora.TabIndex = 13;
+            LbHora.Text = "label2";
+            LbHora.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // Try
             // 
             AcceptButton = BtCalcular;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.CornflowerBlue;
-            ClientSize = new Size(1088, 438);
+            ClientSize = new Size(1351, 535);
+            Controls.Add(LbHora);
+            Controls.Add(BtHora);
             Controls.Add(btsiguiente);
             Controls.Add(label2);
             Controls.Add(TxMult2);
@@ -228,5 +257,7 @@
         private TextBox TxMult2;
         private TextBox TxMult1;
         private Button btsiguiente;
+        private Button BtHora;
+        private Label LbHora;
     }
 }
